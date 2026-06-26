@@ -308,8 +308,8 @@ def main():
         "currentScores": {
             p: totals[p] for p in players
         },
-        "history": rows[-20:][::-1],
-        "matchDetails": rows,
+        "history": history,
+        "matchDetails": matchDetails,
         "groups": calculate_groups(fixtures["matches"]),
         "playoffs": extract_playoffs(fixtures["matches"]),
         "upcoming": scheduled,
