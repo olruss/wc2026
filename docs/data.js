@@ -15,6 +15,42 @@ window.DASHBOARD_DATA = {
       "catches": 12
     }
   },
+  "favorites_breakdown": {
+    "Oleg": [
+      {
+        "team": "Argentina",
+        "pts": 0,
+        "why": "group stage"
+      },
+      {
+        "team": "France",
+        "pts": 0,
+        "why": "group stage"
+      },
+      {
+        "team": "Germany",
+        "pts": 0,
+        "why": "group stage"
+      }
+    ],
+    "Alex": [
+      {
+        "team": "Spain",
+        "pts": 0,
+        "why": "group stage"
+      },
+      {
+        "team": "Argentina",
+        "pts": 0,
+        "why": "group stage"
+      },
+      {
+        "team": "Netherlands",
+        "pts": 0,
+        "why": "group stage"
+      }
+    ]
+  },
   "history": [
     {
       "matchId": "E1",
@@ -2190,5 +2226,5 @@ window.DASHBOARD_DATA = {
       ]
     }
   },
-  "lastUpdated": "2026-06-26 16:53"
+  "lastUpdated": "2026-06-26 17:14"
 };

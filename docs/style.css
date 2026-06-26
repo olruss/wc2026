@@ -757,3 +757,74 @@ table.group-table td.matrix-diagonal {
     font-weight: 500;
     color: #e8eaed;
 }
+
+/* Полоса удачи */
+.g-score-form {
+    display: flex;
+    gap: 4px;
+    margin-top: 8px;
+}
+.g-score-form.text-right {
+    justify-content: flex-end;
+}
+.form-dot {
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    display: inline-block;
+}
+.dot-green { background-color: var(--color-exact); }
+.dot-yellow { background-color: var(--color-outcome); }
+.dot-red { background-color: var(--color-catch); }
+.dot-grey { background-color: var(--border-color); }
+
+/* Фавориты */
+.favorites-section {
+    background: var(--card-bg);
+    border-radius: var(--radius-lg);
+    padding: var(--spacing-md);
+    margin-bottom: var(--spacing-lg);
+    box-shadow: var(--shadow-sm);
+    border: 1px solid var(--border-color);
+}
+.favorites-section h3 {
+    margin-top: 0;
+    margin-bottom: var(--spacing-md);
+    font-size: 0.9rem;
+    color: var(--text-muted);
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    text-align: center;
+}
+.favorites-grid {
+    display: flex;
+    justify-content: space-between;
+    gap: var(--spacing-md);
+}
+.favorites-col {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+}
+.fav-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 0.85rem;
+    padding: 4px 8px;
+    background: var(--bg-color);
+    border-radius: var(--radius-sm);
+    border: 1px solid var(--border-color);
+}
+.fav-team {
+    font-weight: 500;
+}
+.fav-pts {
+    font-size: 0.75rem;
+    color: var(--text-muted);
+    background: var(--card-bg);
+    padding: 2px 6px;
+    border-radius: 10px;
+    border: 1px solid var(--border-color);
+}

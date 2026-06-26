@@ -315,6 +315,9 @@ def main():
         "stats": {
             p: {"exact": exact[p], "outcomes": outcomes[p], "catches": catches[p]} for p in players
         },
+        "favorites_breakdown": {
+            p: [{"team": team, "pts": pts, "why": why} for team, pts, why in fav_breakdown[p]] for p in players
+        },
         "history": history,
         "matchDetails": matchDetails,
         "groups": calculate_groups(fixtures["matches"]),

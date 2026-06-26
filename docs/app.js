@@ -37,6 +37,46 @@ function updateUI(data) {
         animateValue("stats-catches-Alex", 0, data.stats.Alex.catches, 1000);
     }
 
+    
+    // Отрисовка полосы удачи (последние 8 матчей)
+    if (data.history && data.history.length > 0) {
+        const last8 = data.history.slice(-8);
+        ['Oleg', 'Alex'].forEach(player => {
+            const formContainer = document.getElementById(`form-${player}`);
+            if (formContainer) {
+                formContainer.innerHTML = '';
+                last8.forEach(match => {
+                    const pts = match[player];
+                    let dotClass = 'dot-grey';
+                    if (pts === 6) dotClass = 'dot-green';
+                    else if (pts >= 3) dotClass = 'dot-yellow';
+                    else if (pts > 0) dotClass = 'dot-red';
+                    
+                    const dot = document.createElement('span');
+                    dot.className = `form-dot ${dotClass}`;
+                    dot.title = `${match.matchId}: ${pts} очков`;
+                    formContainer.appendChild(dot);
+                });
+            }
+        });
+    }
+
+    // Отрисовка фаворитов
+    if (data.favorites_breakdown) {
+        ['Oleg', 'Alex'].forEach(player => {
+            const favContainer = document.getElementById(`fav-${player}`);
+            if (favContainer && data.favorites_breakdown[player]) {
+                favContainer.innerHTML = '';
+                data.favorites_breakdown[player].forEach(fav => {
+                    const item = document.createElement('div');
+                    item.className = 'fav-item';
+                    item.innerHTML = `<span class="fav-team">${fav.team}</span><span class="fav-pts" title="${fav.why}">+${fav.pts}</span>`;
+                    favContainer.appendChild(item);
+                });
+            }
+        });
+    }
+
     // Обновление отрыва
     const gap = Math.abs(scoreOleg - scoreAlex);
     const leader = scoreOleg > scoreAlex ? "Олег" : (scoreAlex > scoreOleg ? "Алекс" : "Ничья");
