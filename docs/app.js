@@ -521,12 +521,12 @@ function changeScore(matchId, teamIdx, delta) {
 }
 
 function shareToTelegram() {
-    if (!window.dashboardData || !window.dashboardData.upcoming) return;
+    if (!window.DASHBOARD_DATA || !window.DASHBOARD_DATA.upcoming) return;
     
     let text = "Мои прогнозы на завтра:\n\n";
     let hasPredictions = false;
     
-    window.dashboardData.upcoming.forEach(match => {
+    window.DASHBOARD_DATA.upcoming.forEach(match => {
         const score = userPredictions[match.id];
         if (score) {
             hasPredictions = true;
