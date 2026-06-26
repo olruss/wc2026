@@ -10,6 +10,7 @@ document.addEventListener('DOMContentLoaded', () => {
         renderMatches(data);
         if (data.groups) renderGroups(data.groups, data.matchDetails);
         if (data.playoffs) renderPlayoffs(data.playoffs);
+        if (data.upcoming) renderUpcoming(data);
     } catch (error) {
         console.error("Ошибка инициализации:", error);
         document.getElementById('gapText').textContent = "Ошибка загрузки данных";
