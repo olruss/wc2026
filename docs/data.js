@@ -3,6 +3,18 @@ window.DASHBOARD_DATA = {
     "Oleg": 136,
     "Alex": 137
   },
+  "stats": {
+    "Oleg": {
+      "exact": 2,
+      "outcomes": 29,
+      "catches": 13
+    },
+    "Alex": {
+      "exact": 5,
+      "outcomes": 25,
+      "catches": 12
+    }
+  },
   "history": [
     {
       "matchId": "E1",
@@ -2178,5 +2190,5 @@ window.DASHBOARD_DATA = {
       ]
     }
   },
-  "lastUpdated": "2026-06-26 16:38"
+  "lastUpdated": "2026-06-26 16:53"
 };

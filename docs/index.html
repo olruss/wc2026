@@ -8,7 +8,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;500;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="style.css?v=1782506751">
+    <link rel="stylesheet" href="style.css?v=1782507190">
 </head>
 <body>
     <!-- Фоновые декоративные элементы для Glassmorphism -->
@@ -33,6 +33,11 @@
                 <div class="g-score-player">
                     <div class="g-score-name" style="color: var(--color-oleg);">Олег</div>
                     <div class="g-score-pts" id="scoreOleg">0</div>
+                    <div class="player-stats">
+                        <div class="stat-item"><span id="stats-exact-Oleg">0</span> точных</div>
+                        <div class="stat-item"><span id="stats-outcomes-Oleg">0</span> исходов</div>
+                        <div class="stat-item"><span id="stats-catches-Oleg">0</span> зацепов</div>
+                    </div>
                 </div>
                 <div class="g-score-divider">
                     <div class="g-score-gap" id="gapText">Загрузка...</div>
@@ -40,6 +45,11 @@
                 <div class="g-score-player text-right">
                     <div class="g-score-name" style="color: var(--color-alex);">Алекс</div>
                     <div class="g-score-pts" id="scoreAlex">0</div>
+                    <div class="player-stats text-right">
+                        <div class="stat-item"><span id="stats-exact-Alex">0</span> точных</div>
+                        <div class="stat-item"><span id="stats-outcomes-Alex">0</span> исходов</div>
+                        <div class="stat-item"><span id="stats-catches-Alex">0</span> зацепов</div>
+                    </div>
                 </div>
             </div>
 
@@ -94,7 +104,7 @@
     <!-- Подключаем Chart.js -->
     <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
     <!-- Загружаем данные из локального js-файла для обхода CORS -->
-    <script src="data.js?v=1782506751"></script>
-    <script src="app.js?v=1782506751"></script>
+    <script src="data.js?v=1782507190"></script>
+    <script src="app.js?v=1782507190"></script>
 </body>
 </html>

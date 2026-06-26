@@ -198,6 +198,7 @@ def main():
     totals = {p: 0 for p in players}
     exact = {p: 0 for p in players}
     outcomes = {p: 0 for p in players}
+    catches = {p: 0 for p in players}
     rows = []  # per finished match
 
     for m in sorted(finished, key=lambda x: x.get("datetime_utc") or ""):
@@ -215,8 +216,10 @@ def main():
             totals[p] += pts
             if pts == sum(scoring.values()):
                 exact[p] += 1
-            if "O" in detail:
+            elif "O" in detail:
                 outcomes[p] += 1
+            elif pts > 0:
+                catches[p] += 1
             line[p] = (f'{pred[0]}-{pred[1]}', pts)
             line[f"{p}_pts"] = pts
         rows.append(line)
@@ -240,7 +243,7 @@ def main():
     for i, p in enumerate(ranked, 1):
         lead = "  " if i > 1 else "* "
         print(f"{lead}{i}. {p:<12} {totals[p]:>4} pts   "
-              f"(exact: {exact[p]}, outcomes: {outcomes[p]})")
+              f"(exact: {exact[p]}, outcomes: {outcomes[p]}, catches: {catches[p]})")
     print()
 
     if rows:
@@ -308,6 +311,9 @@ def main():
     data_json = {
         "currentScores": {
             p: totals[p] for p in players
+        },
+        "stats": {
+            p: {"exact": exact[p], "outcomes": outcomes[p], "catches": catches[p]} for p in players
         },
         "history": history,
         "matchDetails": matchDetails,

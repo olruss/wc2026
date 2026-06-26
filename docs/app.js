@@ -25,6 +25,18 @@ function updateUI(data) {
     animateValue("scoreOleg", 0, scoreOleg, 1000);
     animateValue("scoreAlex", 0, scoreAlex, 1000);
     
+    
+    // Обновление статистики (Точные, Исходы, Зацепы)
+    if (data.stats) {
+        animateValue("stats-exact-Oleg", 0, data.stats.Oleg.exact, 1000);
+        animateValue("stats-outcomes-Oleg", 0, data.stats.Oleg.outcomes, 1000);
+        animateValue("stats-catches-Oleg", 0, data.stats.Oleg.catches, 1000);
+        
+        animateValue("stats-exact-Alex", 0, data.stats.Alex.exact, 1000);
+        animateValue("stats-outcomes-Alex", 0, data.stats.Alex.outcomes, 1000);
+        animateValue("stats-catches-Alex", 0, data.stats.Alex.catches, 1000);
+    }
+
     // Обновление отрыва
     const gap = Math.abs(scoreOleg - scoreAlex);
     const leader = scoreOleg > scoreAlex ? "Олег" : (scoreAlex > scoreOleg ? "Алекс" : "Ничья");
