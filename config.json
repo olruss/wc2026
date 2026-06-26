@@ -1,0 +1,19 @@
+{
+  "players": ["Oleg", "Alex"],
+  "scoring": {
+    "outcome": 3,
+    "home_goals": 1,
+    "away_goals": 1,
+    "margin": 1
+  },
+  "favorites": {
+    "_comment": "Points a favorite team earns for the FURTHEST stage it reaches. round_of_32 is new in the 48-team format (tune or set to 0). 'final' = reached final / runner-up; 'champion' = won the cup.",
+    "round_of_32": 2,
+    "round_of_16": 3,
+    "quarter": 6,
+    "semi": 12,
+    "final": 20,
+    "champion": 30
+  },
+  "tiebreakers": ["total_points", "exact_scores", "correct_outcomes"]
+}

@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Олег vs Алекс - Битва Прогнозистов 🏆</title>
+    <!-- Подключаем шрифт Inter для современного вида -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Фоновые декоративные элементы для Glassmorphism -->
+    <div class="blob blob-blue"></div>
+    <div class="blob blob-red"></div>
+
+    <div class="container">
+        <header>
+            <h1>Битва Прогнозистов</h1>
+            <p class="subtitle">World Cup 2026</p>
+        </header>
+        
+        <nav class="g-tabs">
+            <button class="g-tab-btn active" onclick="switchTab('overview')">Обзор</button>
+            <button class="g-tab-btn" onclick="switchTab('groups')">Группы</button>
+            <button class="g-tab-btn" onclick="switchTab('playoffs')">Плей-офф</button>
+        </nav>
+
+        <div id="tab-overview" class="tab-content active">
+            <div class="g-scoreboard">
+                <div class="g-score-player">
+                    <div class="g-score-name" style="color: var(--color-oleg);">Олег</div>
+                    <div class="g-score-pts" id="scoreOleg">0</div>
+                </div>
+                <div class="g-score-divider">
+                    <div class="g-score-gap" id="gapText">Загрузка...</div>
+                </div>
+                <div class="g-score-player text-right">
+                    <div class="g-score-name" style="color: var(--color-alex);">Алекс</div>
+                    <div class="g-score-pts" id="scoreAlex">0</div>
+                </div>
+            </div>
+
+        <section class="chart-container">
+            <div class="chart-scroll-wrapper">
+                <canvas id="pointsChart"></canvas>
+            </div>
+        </section>
+        
+        <section class="matches-container">
+            <h2>Результаты и прогнозы (Последние 20)</h2>
+            <div id="matchesList" class="matches-list">
+                <!-- Сюда JS вставит карточки матчей -->
+            </div>
+            </section>
+        </div>
+        
+        <!-- Вкладка 2: Группы -->
+        <div id="tab-groups" class="tab-content">
+            <div id="groupsContainer" class="groups-grid">
+                <!-- Сюда JS вставит таблицы групп -->
+            </div>
+        </div>
+
+        <!-- Вкладка 3: Плей-офф -->
+        <div id="tab-playoffs" class="tab-content">
+            <div id="playoffsContainer" class="playoffs-list">
+                <!-- Сюда JS вставит матчи плей-офф -->
+            </div>
+        </div>
+        
+        <footer>
+            <p>Последнее обновление: <span id="lastUpdated">--</span></p>
+        </footer>
+    </div>
+
+    <!-- Подключаем Chart.js -->
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <!-- Загружаем данные из локального js-файла для обхода CORS -->
+    <script src="data.js"></script>
+    <script src="app.js"></script>
+</body>
+</html>

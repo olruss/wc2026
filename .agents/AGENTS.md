@@ -1,0 +1,46 @@
+# World Cup Betting Tracker - Project Context
+
+This project is a lightweight, local-first system for tracking World Cup match predictions and calculating scores.
+
+## Architecture & Data Storage
+- **Data Format**: All tracking happens locally using `csv` or `json` files.
+- **External Services**: **NO API keys or paid sources can be used.** Do not propose or use paid APIs.
+- **Data Sourcing**: Fixtures, results, and tournament tables must be retrieved by crafting scripts that pull/scrape data from free, public web pages.
+- **Execution**: Computing standings should be done via simple local scripts or a minimalistic local server.
+
+## Daily Workflow
+1. For upcoming rounds, the agent analyzes the `analytics/` folder, past match results, and general football knowledge to generate a proposed set of predictions for the user (Oleg).
+2. The user will review, approve, or correct the agent's predictions.
+3. Once Oleg's predictions are finalized, the user will provide Alex's predictions.
+4. The agent's role is to update the local `csv` or `json` tracking files with these predictions.
+5. The agent is responsible for obtaining the latest match results (using custom scraping scripts or web search) and executing the scoring logic to calculate updated standings.
+
+## Scoring System
+The scoring rules for calculating prediction points (maximum 6 points per match) are defined as:
+- **3 points** for predicting the correct match result (Win/Draw/Loss).
+- **1 point** for correctly predicting the exact number of goals scored by Team A.
+- **1 point** for correctly predicting the exact number of goals scored by Team B.
+- **1 point** for correctly predicting the exact goal difference.
+*(Example: An exact score prediction yields 3 + 1 + 1 + 1 = 6 points)*
+
+## General Guidelines
+- Start super-simple. Avoid complex databases or heavy frameworks.
+- Prioritize working with local files.
+- Be proactive in updating files when the user drops in new bets.
+- **Language**: All communication with the user must be in Russian.
+- **Output Format**: Format match results and standings so they are perfectly readable when copied and pasted into Telegram. Avoid ASCII box-drawing characters (`┌─┬`). Use a clean plain-text list format without emojis. Always translate player names to Russian (e.g., Олег, Алекс) and use them in the output. Always include a short, engaging analytical commentary comparing the predictions (e.g. noting where players diverged or took risks). The commentary should be addressed to both players as a group, using third-person references to their names (e.g., "Олег поставил...", "Алекс угадал...") rather than "ты/твой".
+
+## Current Status & Next Steps (Session Handoff)
+- **Current Standings**: Oleg leads with 80 points, Alex has 71 points (Gap: 9 points).
+- **Pending Matches (Predictions already locked in `data/predictions.json`)**:
+  - J3: Argentina vs Austria
+  - I3: France vs Iraq
+  - I4: Norway vs Senegal
+  - J4: Jordan vs Algeria
+- **Immediate Task for New Session**:
+  1. If these matches have concluded (dates: 2026-06-22 to 2026-06-23), use web search to find the actual results.
+  2. Update `data/fixtures.json` with the scores.
+  3. Run `python3 compute.py`.
+  4. Provide the updated standings to the user with engaging Russian commentary comparing Oleg and Alex's bets.
+  5. Check `data/fixtures.json` for the next `scheduled` matches and propose predictions for Oleg based on the `analytics/` folder.
+- **Important Note**: The H3 match (Spain vs Saudi Arabia) was intentionally skipped and omitted from `predictions.json` because Alex missed the deadline. Do not score it.

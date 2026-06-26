@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Олег vs Алекс - Битва Прогнозистов</title>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <style>
+        body {
+            background-color: #121212;
+            color: #ffffff;
+            font-family: 'Inter', 'Roboto', sans-serif;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+            margin: 0;
+        }
+        .container {
+            background-color: #1e1e1e;
+            border-radius: 16px;
+            padding: 30px;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
+            width: 80%;
+            max-width: 800px;
+            text-align: center;
+        }
+        h1 {
+            margin-top: 0;
+            font-weight: 300;
+            letter-spacing: 2px;
+            color: #4CAF50;
+        }
+        .stats {
+            display: flex;
+            justify-content: space-around;
+            margin: 20px 0;
+            font-size: 24px;
+        }
+        .oleg { color: #2196F3; font-weight: bold; }
+        .alex { color: #f44336; font-weight: bold; }
+        .gap { font-size: 16px; color: #888; margin-bottom: 20px; }
+        canvas {
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>🏆 WORLD CUP 2026</h1>
+        <div class="stats">
+            <div>Олег: <span class="oleg">80</span></div>
+            <div>Алекс: <span class="alex">71</span></div>
+        </div>
+        <div class="gap">Отрыв: 9 очков в пользу Олега</div>
+        <canvas id="scoreChart"></canvas>
+    </div>
+
+    <script>
+        const ctx = document.getElementById('scoreChart').getContext('2d');
+        const scoreChart = new Chart(ctx, {
+            type: 'line',
+            data: {
+                labels: ['Тур 1', 'Тур 2', 'Тур 3', 'Тур 4', 'Тур 5', 'Сейчас'],
+                datasets: [
+                    {
+                        label: 'Олег',
+                        data: [10, 25, 42, 55, 68, 80],
+                        borderColor: '#2196F3',
+                        backgroundColor: 'rgba(33, 150, 243, 0.2)',
+                        borderWidth: 3,
+                        tension: 0.4,
+                        fill: true
+                    },
+                    {
+                        label: 'Алекс',
+                        data: [12, 22, 38, 48, 60, 71],
+                        borderColor: '#f44336',
+                        backgroundColor: 'rgba(244, 67, 54, 0.2)',
+                        borderWidth: 3,
+                        tension: 0.4,
+                        fill: true
+                    }
+                ]
+            },
+            options: {
+                responsive: true,
+                plugins: {
+                    legend: {
+                        labels: { color: '#fff' }
+                    }
+                },
+                scales: {
+                    y: {
+                        beginAtZero: true,
+                        grid: { color: '#333' },
+                        ticks: { color: '#bbb' }
+                    },
+                    x: {
+                        grid: { color: '#333' },
+                        ticks: { color: '#bbb' }
+                    }
+                }
+            }
+        });
+    </script>
+</body>
+</html>

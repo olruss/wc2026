@@ -1,0 +1,269 @@
+{
+  "currentScores": {
+    "Oleg": 136,
+    "Alex": 137
+  },
+  "history": [
+    {
+      "matchId": "E1",
+      "Oleg": 3,
+      "Alex": 4
+    },
+    {
+      "matchId": "F1",
+      "Oleg": 4,
+      "Alex": 1
+    },
+    {
+      "matchId": "E2",
+      "Oleg": 1,
+      "Alex": 0
+    },
+    {
+      "matchId": "F2",
+      "Oleg": 0,
+      "Alex": 1
+    },
+    {
+      "matchId": "H1",
+      "Oleg": 1,
+      "Alex": 0
+    },
+    {
+      "matchId": "G1",
+      "Oleg": 1,
+      "Alex": 1
+    },
+    {
+      "matchId": "H2",
+      "Oleg": 1,
+      "Alex": 0
+    },
+    {
+      "matchId": "G2",
+      "Oleg": 1,
+      "Alex": 1
+    },
+    {
+      "matchId": "I1",
+      "Oleg": 4,
+      "Alex": 6
+    },
+    {
+      "matchId": "I2",
+      "Oleg": 3,
+      "Alex": 3
+    },
+    {
+      "matchId": "J1",
+      "Oleg": 4,
+      "Alex": 4
+    },
+    {
+      "matchId": "J2",
+      "Oleg": 4,
+      "Alex": 1
+    },
+    {
+      "matchId": "K1",
+      "Oleg": 0,
+      "Alex": 1
+    },
+    {
+      "matchId": "L1",
+      "Oleg": 4,
+      "Alex": 3
+    },
+    {
+      "matchId": "L2",
+      "Oleg": 4,
+      "Alex": 0
+    },
+    {
+      "matchId": "K2",
+      "Oleg": 4,
+      "Alex": 4
+    },
+    {
+      "matchId": "A3",
+      "Oleg": 0,
+      "Alex": 1
+    },
+    {
+      "matchId": "B3",
+      "Oleg": 3,
+      "Alex": 3
+    },
+    {
+      "matchId": "B4",
+      "Oleg": 3,
+      "Alex": 4
+    },
+    {
+      "matchId": "A4",
+      "Oleg": 1,
+      "Alex": 4
+    },
+    {
+      "matchId": "D3",
+      "Oleg": 4,
+      "Alex": 4
+    },
+    {
+      "matchId": "C3",
+      "Oleg": 4,
+      "Alex": 4
+    },
+    {
+      "matchId": "C4",
+      "Oleg": 6,
+      "Alex": 4
+    },
+    {
+      "matchId": "D4",
+      "Oleg": 6,
+      "Alex": 0
+    },
+    {
+      "matchId": "F3",
+      "Oleg": 0,
+      "Alex": 4
+    },
+    {
+      "matchId": "E3",
+      "Oleg": 4,
+      "Alex": 4
+    },
+    {
+      "matchId": "E4",
+      "Oleg": 1,
+      "Alex": 0
+    },
+    {
+      "matchId": "F4",
+      "Oleg": 3,
+      "Alex": 4
+    },
+    {
+      "matchId": "G3",
+      "Oleg": 1,
+      "Alex": 1
+    },
+    {
+      "matchId": "H4",
+      "Oleg": 1,
+      "Alex": 0
+    },
+    {
+      "matchId": "G4",
+      "Oleg": 4,
+      "Alex": 4
+    },
+    {
+      "matchId": "J3",
+      "Oleg": 4,
+      "Alex": 6
+    },
+    {
+      "matchId": "I3",
+      "Oleg": 4,
+      "Alex": 6
+    },
+    {
+      "matchId": "I4",
+      "Oleg": 4,
+      "Alex": 1
+    },
+    {
+      "matchId": "J4",
+      "Oleg": 4,
+      "Alex": 6
+    },
+    {
+      "matchId": "K3",
+      "Oleg": 4,
+      "Alex": 4
+    },
+    {
+      "matchId": "L3",
+      "Oleg": 0,
+      "Alex": 1
+    },
+    {
+      "matchId": "L4",
+      "Oleg": 4,
+      "Alex": 4
+    },
+    {
+      "matchId": "K4",
+      "Oleg": 4,
+      "Alex": 4
+    },
+    {
+      "matchId": "B5",
+      "Oleg": 0,
+      "Alex": 1
+    },
+    {
+      "matchId": "B6",
+      "Oleg": 4,
+      "Alex": 4
+    },
+    {
+      "matchId": "C5",
+      "Oleg": 4,
+      "Alex": 4
+    },
+    {
+      "matchId": "C6",
+      "Oleg": 4,
+      "Alex": 3
+    },
+    {
+      "matchId": "A5",
+      "Oleg": 4,
+      "Alex": 4
+    },
+    {
+      "matchId": "A6",
+      "Oleg": 1,
+      "Alex": 0
+    },
+    {
+      "matchId": "E5",
+      "Oleg": 4,
+      "Alex": 6
+    },
+    {
+      "matchId": "E6",
+      "Oleg": 0,
+      "Alex": 0
+    },
+    {
+      "matchId": "F5",
+      "Oleg": 1,
+      "Alex": 1
+    },
+    {
+      "matchId": "F6",
+      "Oleg": 4,
+      "Alex": 3
+    },
+    {
+      "matchId": "D5",
+      "Oleg": 1,
+      "Alex": 4
+    },
+    {
+      "matchId": "D6",
+      "Oleg": 1,
+      "Alex": 4
+    },
+    {
+      "matchId": "Favorites",
+      "Oleg": 0,
+      "Alex": 0
+    }
+  ],
+  "lastUpdated": "2026-06-26 13:07"
+}

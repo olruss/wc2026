@@ -1,0 +1,660 @@
+:root {
+    --bg-dark: #0b0c10;
+    --glass-bg: rgba(30, 32, 38, 0.6);
+    --glass-border: rgba(255, 255, 255, 0.08);
+    --text-main: #f5f6f7;
+    --text-muted: #8b92a5;
+    
+    /* Сочные oklch цвета согласно best practices */
+    --color-oleg: oklch(65% 0.15 250); /* Яркий сине-голубой */
+    --color-oleg-glow: oklch(65% 0.15 250 / 20%);
+    --color-alex: oklch(65% 0.20 25); /* Яркий красно-оранжевый */
+    --color-alex-glow: oklch(65% 0.20 25 / 20%);
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: var(--bg-dark);
+    color: var(--text-main);
+    font-family: 'Inter', sans-serif;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow-x: hidden;
+    position: relative;
+    padding: 20px;
+}
+
+.container {
+    background: #202124;
+    border-radius: 12px;
+    padding: 20px 0;
+    width: 100%;
+    max-width: 900px;
+}
+
+/* Google Style Tabs */
+.g-tabs {
+    display: flex;
+    justify-content: center;
+    border-bottom: 1px solid #3c4043;
+    margin-bottom: 30px;
+    padding: 0 20px;
+}
+.g-tab-btn {
+    background: transparent;
+    border: none;
+    color: #9aa0a6;
+    font-size: 1rem;
+    font-weight: 500;
+    padding: 12px 24px;
+    cursor: pointer;
+    border-bottom: 3px solid transparent;
+    transition: color 0.2s, border-color 0.2s;
+}
+.g-tab-btn:hover {
+    color: #e8eaed;
+}
+.g-tab-btn.active {
+    color: #8ab4f8;
+    border-bottom-color: #8ab4f8;
+}
+
+header {
+    text-align: center;
+    margin-bottom: 30px;
+}
+h1 {
+    font-size: 2.2rem;
+    font-weight: 500;
+    margin-bottom: 4px;
+}
+.subtitle {
+    color: var(--text-muted);
+    font-size: 0.95rem;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+/* Google Style Scoreboard */
+.g-scoreboard {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: #303134;
+    border: 1px solid #3c4043;
+    border-radius: 8px;
+    padding: 20px 30px;
+    margin: 0 20px 30px 20px;
+}
+.g-score-player {
+    display: flex;
+    flex-direction: column;
+}
+.g-score-player.text-right {
+    text-align: right;
+    align-items: flex-end;
+}
+.g-score-name {
+    font-size: 1.1rem;
+    font-weight: 500;
+    margin-bottom: 4px;
+}
+.g-score-pts {
+    font-size: 2.5rem;
+    font-weight: 700;
+    color: #e8eaed;
+    line-height: 1;
+}
+.g-score-divider {
+    flex: 1;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+}
+.g-score-gap {
+    background: rgba(255,255,255,0.08);
+    color: #9aa0a6;
+    padding: 6px 16px;
+    border-radius: 16px;
+    font-size: 0.85rem;
+    font-weight: 500;
+}
+
+.chart-container {
+    width: 100%;
+    overflow-x: auto;
+    overflow-y: hidden;
+    margin-bottom: 20px;
+}
+/* Скроллбар для графика */
+.chart-container::-webkit-scrollbar { height: 8px; }
+.chart-container::-webkit-scrollbar-track { background: rgba(255,255,255,0.05); border-radius: 4px; }
+.chart-container::-webkit-scrollbar-thumb { background: rgba(255,255,255,0.2); border-radius: 4px; }
+
+.chart-scroll-wrapper {
+    position: relative;
+    height: 350px;
+    min-width: 800px; /* Форсируем скролл на мобилках */
+}
+
+footer {
+    margin-top: 30px;
+    text-align: center;
+    color: var(--text-muted);
+    font-size: 0.85rem;
+}
+
+/* Адаптивность для мобильных */
+@media (max-width: 600px) {
+    .g-scoreboard {
+        padding: 15px;
+    }
+    .g-score-pts { font-size: 2rem; }
+    .g-score-gap { padding: 4px 10px; font-size: 0.75rem; }
+    .g-tabs { padding: 0; }
+    .g-tab-btn { padding: 12px 16px; font-size: 0.9rem; }
+}
+
+/* Стили для списка матчей */
+.matches-container {
+    margin-top: 50px;
+}
+.matches-container h2 {
+    font-size: 1.4rem;
+    margin-bottom: 20px;
+    font-weight: 500;
+    text-align: center;
+    color: var(--text-main);
+}
+.matches-list {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+.match-card {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 12px 20px;
+    border-bottom: 1px solid #3c4043;
+}
+.match-card:last-child {
+    border-bottom: none;
+}
+.match-info {
+    flex: 2;
+}
+.match-id {
+    font-size: 0.75rem;
+    color: var(--text-muted);
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+.match-title {
+    font-size: 1.05rem;
+    font-weight: 500;
+    margin-top: 4px;
+}
+.match-predictions {
+    display: flex;
+    flex: 3;
+    justify-content: flex-end;
+    gap: 20px;
+}
+.pred-block {
+    text-align: center;
+    min-width: 80px;
+}
+.pred-player {
+    font-size: 0.75rem;
+    color: var(--text-muted);
+    margin-bottom: 6px;
+}
+.pred-player.oleg { color: var(--color-oleg); }
+.pred-player.alex { color: var(--color-alex); }
+
+.pred-value {
+    font-weight: 700;
+    font-size: 1.1rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+}
+.pred-pts {
+    display: inline-block;
+    padding: 3px 8px;
+    border-radius: 12px;
+    font-size: 0.75rem;
+    font-weight: 700;
+}
+.pts-high { background: rgba(76, 175, 80, 0.15); color: #4CAF50; border: 1px solid rgba(76, 175, 80, 0.3); }
+.pts-med { background: rgba(255, 152, 0, 0.15); color: #FF9800; border: 1px solid rgba(255, 152, 0, 0.3); }
+.pts-low { background: rgba(255, 255, 255, 0.05); color: var(--text-muted); border: 1px solid var(--glass-border); }
+
+@media (max-width: 700px) {
+    .match-card {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 16px;
+    }
+    .match-predictions {
+        width: 100%;
+        justify-content: space-between;
+    }
+}
+
+/* --- Вкладки (Tabs) --- */
+.tabs {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin-bottom: 30px;
+}
+.tab-btn {
+    background: rgba(255, 255, 255, 0.05);
+    border: 1px solid var(--glass-border);
+    color: var(--text-main);
+    padding: 10px 20px;
+    border-radius: 20px;
+    cursor: pointer;
+    font-size: 0.95rem;
+    font-weight: 500;
+    transition: all 0.2s ease;
+}
+.tab-btn:hover {
+    background: rgba(255, 255, 255, 0.1);
+}
+.tab-btn.active {
+    background: var(--text-main);
+    color: var(--bg-dark);
+}
+.tab-content {
+    display: none;
+    animation: fadeIn 0.4s ease forwards;
+}
+.tab-content.active {
+    display: block;
+}
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(10px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+/* --- Турнирные таблицы групп --- */
+.groups-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+}
+/* --- Сетка Плей-офф (Google Bracket Style) --- */
+.bracket-scroll {
+    display: flex;
+    overflow-x: auto;
+    padding: 30px 20px;
+    gap: 50px;
+    height: 1200px; /* Fixed height for flex distribution */
+    background: transparent;
+}
+/* Скроллбар для сетки */
+.bracket-scroll::-webkit-scrollbar { height: 8px; }
+.bracket-scroll::-webkit-scrollbar-track { background: rgba(255,255,255,0.05); border-radius: 4px; }
+.bracket-scroll::-webkit-scrollbar-thumb { background: rgba(255,255,255,0.2); border-radius: 4px; }
+
+.bracket-stage {
+    position: relative;
+    min-width: 220px;
+    flex-shrink: 0;
+}
+.b-stage-inner {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    height: 100%;
+    padding-top: 30px; /* Space for title */
+}
+.stage-title {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    text-align: center;
+    color: #9aa0a6;
+    font-size: 0.85rem;
+    font-weight: 500;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+.b-match-wrapper {
+    position: relative;
+    display: flex;
+    align-items: center;
+    margin: 5px 0;
+}
+.b-match-card {
+    background: #303134;
+    border: 1px solid #3c4043;
+    border-radius: 6px;
+    overflow: hidden;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.5);
+}
+.b-team {
+    display: flex;
+    justify-content: space-between;
+    padding: 8px 12px;
+    font-size: 0.9rem;
+    color: #e8eaed;
+    border-bottom: 1px solid #3c4043;
+}
+.b-team:last-child {
+    border-bottom: none;
+}
+.b-team.winner {
+    font-weight: bold;
+    color: #fff;
+}
+.b-team-name {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    max-width: 140px;
+}
+.b-team-score {
+    font-weight: 500;
+}
+.b-badges {
+    position: absolute;
+    right: -30px;
+    display: flex;
+    flex-direction: column;
+    gap: 2px;
+}
+.b-badges .m-badge {
+    width: 14px;
+    height: 14px;
+    font-size: 0.55rem;
+}
+.group-table-card {
+    background: rgba(255, 255, 255, 0.02);
+    border: 1px solid var(--glass-border);
+    border-radius: 16px;
+    padding: 15px;
+    overflow-x: auto;
+}
+.group-table-card h3 {
+    text-align: center;
+    margin-bottom: 15px;
+    font-weight: 500;
+    color: var(--color-oleg); /* Или нейтральный акцент */
+}
+table.group-table {
+    width: 100%;
+    border-collapse: collapse;
+    font-size: 0.9rem;
+}
+table.group-table th {
+    text-align: center;
+    color: var(--text-muted);
+    font-weight: 500;
+    padding-bottom: 10px;
+    border-bottom: 1px solid var(--glass-border);
+}
+table.group-table th.team-col {
+    text-align: left;
+}
+table.group-table td {
+    text-align: center;
+    padding: 10px 0;
+    border-bottom: 1px solid rgba(255,255,255,0.02);
+}
+table.group-table td.team-col {
+    text-align: left;
+    font-weight: 500;
+}
+/* Подсветка выходящих мест (первые 2) */
+table.group-table tr.qualifier td.team-col {
+    position: relative;
+    padding-left: 10px;
+}
+table.group-table tr.qualifier td.team-col::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    height: 60%;
+    width: 3px;
+    background-color: #4CAF50;
+    border-radius: 2px;
+}
+
+/* --- Плей-офф --- */
+.playoff-stage {
+    margin-bottom: 40px;
+}
+.playoff-stage h3 {
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 1.2rem;
+    color: var(--text-main);
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+.playoff-matches {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+    justify-content: center;
+}
+.playoff-card {
+    background: rgba(255, 255, 255, 0.02);
+    border: 1px solid var(--glass-border);
+    border-radius: 12px;
+    padding: 15px;
+    width: 200px;
+    text-align: center;
+}
+.playoff-team {
+    display: flex;
+    justify-content: space-between;
+    padding: 5px 0;
+}
+.playoff-team.winner {
+    font-weight: 700;
+    color: #4CAF50;
+}
+.playoff-team.loser {
+    color: var(--text-muted);
+}
+.playoff-score {
+    font-family: monospace;
+    font-size: 1.1rem;
+}
+
+/* --- Стили бейджей-кружков (Google Last 5 style) --- */
+.groups-grid {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    max-width: 800px;
+    margin: 0 auto;
+}
+.group-wrapper {
+    background: transparent;
+    border: none;
+    padding: 0;
+}
+.group-wrapper h3 {
+    text-align: left;
+    font-size: 1.2rem;
+    font-weight: 700;
+    color: #e8eaed;
+    margin-bottom: 15px;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+}
+table.group-table {
+    width: 100%;
+    border-collapse: collapse;
+    font-size: 0.95rem;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+}
+table.group-table th {
+    text-align: center;
+    color: #9aa0a6;
+    font-weight: 400;
+    font-size: 0.85rem;
+    padding: 10px 6px;
+    border-bottom: 1px solid #3c4043;
+}
+table.group-table th.team-col {
+    text-align: left;
+    padding-left: 20px;
+}
+table.group-table td {
+    text-align: center;
+    color: #e8eaed;
+    padding: 12px 6px;
+    border-bottom: 1px solid #3c4043;
+}
+table.group-table td.team-col {
+    text-align: left;
+}
+table.group-table tr.qualifier td:first-child {
+    border-left: 3px solid #8ab4f8;
+}
+table.group-table tr td:first-child {
+    border-left: 3px solid transparent;
+}
+table.group-table tr:hover td {
+    background-color: rgba(255,255,255,0.04);
+}
+table.group-table td.pts-col {
+    font-weight: bold;
+    color: #fff;
+}
+
+/* Иконки статуса */
+/* --- Стили для Матрицы --- */
+table.group-table th.matrix-col {
+    text-align: center;
+    color: #8ab4f8;
+    font-size: 0.8rem;
+    padding: 10px 4px;
+}
+table.group-table td.matrix-col {
+    text-align: center;
+    padding: 8px 4px;
+    border-left: 1px solid #3c4043;
+    border-right: 1px solid #3c4043;
+    vertical-align: middle;
+}
+table.group-table td.matrix-diagonal {
+    background: repeating-linear-gradient(
+      45deg,
+      #303134,
+      #303134 5px,
+      #3c4043 5px,
+      #3c4043 10px
+    );
+}
+
+.matrix-cell {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    cursor: help;
+}
+.matrix-score {
+    font-weight: bold;
+    font-size: 0.95rem;
+    color: #fff;
+    margin-bottom: 3px;
+    letter-spacing: 1px;
+}
+.matrix-badges {
+    display: flex;
+    gap: 4px;
+    justify-content: center;
+}
+.m-badge {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 16px;
+    height: 16px;
+    border-radius: 50%;
+    font-size: 0.65rem;
+    font-weight: bold;
+    color: #fff;
+}
+.m-badge.win {
+    background-color: #34a853; /* Green */
+}
+.m-badge.draw {
+    background-color: #fbbc04; /* Yellow */
+    color: #000;
+}
+.m-badge.loss {
+    background-color: #ea4335; /* Red */
+}
+.m-badge.empty {
+    border: 1px solid #5f6368;
+    background-color: transparent;
+    color: transparent;
+}
+
+/* Custom Tooltip */
+.g-tooltip {
+    position: absolute;
+    bottom: 130%;
+    left: 50%;
+    transform: translateX(-50%) translateY(5px);
+    background: #202124;
+    border: 1px solid #3c4043;
+    padding: 8px 12px;
+    border-radius: 6px;
+    font-size: 0.75rem;
+    color: #e8eaed;
+    white-space: nowrap;
+    pointer-events: none;
+    opacity: 0;
+    transition: opacity 0.2s ease, transform 0.2s ease;
+    z-index: 100;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.3);
+    text-align: center;
+    line-height: 1.4;
+}
+/* Стрелочка вниз */
+.g-tooltip::after {
+    content: '';
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    margin-left: -5px;
+    border-width: 5px;
+    border-style: solid;
+    border-color: #3c4043 transparent transparent transparent;
+}
+.matrix-cell:hover .g-tooltip {
+    opacity: 1;
+    transform: translateX(-50%) translateY(0);
+}
+.g-tt-match {
+    font-weight: 600;
+    color: #fff;
+    margin-bottom: 2px;
+}
+
+
