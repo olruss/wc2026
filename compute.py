@@ -7,7 +7,8 @@ the current standings, a per-match breakdown, and favorite-team points.
 No third-party dependencies. Run:  python3 compute.py
 """
 import json
-import os
+import sys
+import re
 from pathlib import Path
 
 ROOT = Path(__file__).resolve().parent
@@ -322,6 +323,27 @@ def main():
         json.dump(data_json, f, ensure_ascii=False, indent=2)
         f.write(";\n")
     print(f"\n[INFO] Web dashboard data exported to {DOCS / 'data.js'}")
+
+    # ---- Cache Busting ----
+    # Обновляем версию файлов в index.html, чтобы сбросить кэш у пользователей
+    import time
+    version = str(int(time.time()))
+    index_path = DOCS / "index.html"
+    if index_path.exists():
+        with open(index_path, "r", encoding="utf-8") as f:
+            html = f.read()
+        
+        # Обновляем CSS
+        html = re.sub(r'href="style\.css(\?v=\d+)?"', f'href="style.css?v={version}"', html)
+        # Обновляем data.js
+        html = re.sub(r'src="data\.js(\?v=\d+)?"', f'src="data.js?v={version}"', html)
+        # Обновляем app.js
+        html = re.sub(r'src="app\.js(\?v=\d+)?"', f'src="app.js?v={version}"', html)
+        
+        with open(index_path, "w", encoding="utf-8") as f:
+            f.write(html)
+        print(f"[INFO] Cache busted in index.html (version {version})")
+
 
 
 
