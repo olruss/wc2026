@@ -180,6 +180,12 @@ def main():
     fixtures = load("fixtures.json")
     predictions = load("predictions.json")
     favorites = load("favorites.json")
+    
+    upcoming_ai = {}
+    try:
+        upcoming_ai = load("upcoming_ai.json")
+    except:
+        pass
 
     players = config["players"]
     scoring = config["scoring"]
@@ -295,14 +301,19 @@ def main():
     playoff_bracket = extract_playoffs(fixtures["matches"])
     
     from datetime import datetime
+    # Filter scheduled matches
+    scheduled = [m for m in fixtures["matches"] if m["status"] == "scheduled"]
+    
     data_json = {
         "currentScores": {
             p: totals[p] for p in players
         },
-        "history": history,
-        "matchDetails": matchDetails,
-        "groups": group_standings,
-        "playoffs": playoff_bracket,
+        "history": rows[-20:][::-1],
+        "matchDetails": rows,
+        "groups": calculate_groups(fixtures["matches"]),
+        "playoffs": extract_playoffs(fixtures["matches"]),
+        "upcoming": scheduled,
+        "upcoming_ai": upcoming_ai,
         "lastUpdated": datetime.now().strftime("%Y-%m-%d %H:%M")
     }
     
