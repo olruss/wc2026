@@ -1,7 +1,7 @@
 window.DASHBOARD_DATA = {
   "currentScores": {
     "Oleg": 143,
-    "Alex": 147
+    "Alex": 145
   },
   "stats": {
     "Oleg": {
@@ -10,8 +10,8 @@ window.DASHBOARD_DATA = {
       "catches": 13
     },
     "Alex": {
-      "exact": 6,
-      "outcomes": 26,
+      "exact": 5,
+      "outcomes": 27,
       "catches": 12
     }
   },
@@ -308,12 +308,12 @@ window.DASHBOARD_DATA = {
       "Alex": 4
     },
     {
-      "matchId": "G5",
+      "matchId": "I5",
       "Oleg": 4,
-      "Alex": 6
+      "Alex": 4
     },
     {
-      "matchId": "G6",
+      "matchId": "I6",
       "Oleg": 3,
       "Alex": 4
     },
@@ -784,21 +784,21 @@ window.DASHBOARD_DATA = {
       "Alex_pts": 4
     },
     {
-      "id": "G5",
-      "match": "Egypt 2-1 Iran",
-      "stage": "group",
-      "Oleg_pred": "3-1",
-      "Oleg_pts": 4,
-      "Alex_pred": "2-1",
-      "Alex_pts": 6
-    },
-    {
-      "id": "G6",
-      "match": "New Zealand 0-3 Belgium",
+      "id": "I5",
+      "match": "Norway 1-3 France",
       "stage": "group",
       "Oleg_pred": "1-2",
+      "Oleg_pts": 4,
+      "Alex_pred": "2-3",
+      "Alex_pts": 4
+    },
+    {
+      "id": "I6",
+      "match": "Senegal 5-0 Iraq",
+      "stage": "group",
+      "Oleg_pred": "2-1",
       "Oleg_pts": 3,
-      "Alex_pred": "1-3",
+      "Alex_pred": "3-0",
       "Alex_pts": 4
     }
   ],
@@ -1082,46 +1082,46 @@ window.DASHBOARD_DATA = {
     "G": [
       {
         "team": "Egypt",
-        "pld": 3,
-        "w": 2,
+        "pld": 2,
+        "w": 1,
         "d": 1,
         "l": 0,
-        "gf": 6,
-        "ga": 3,
-        "gd": 3,
-        "pts": 7
-      },
-      {
-        "team": "Belgium",
-        "pld": 3,
-        "w": 1,
-        "d": 2,
-        "l": 0,
         "gf": 4,
-        "ga": 1,
-        "gd": 3,
-        "pts": 5
+        "ga": 2,
+        "gd": 2,
+        "pts": 4
       },
       {
         "team": "Iran",
-        "pld": 3,
+        "pld": 2,
         "w": 0,
         "d": 2,
-        "l": 1,
-        "gf": 3,
-        "ga": 4,
-        "gd": -1,
+        "l": 0,
+        "gf": 2,
+        "ga": 2,
+        "gd": 0,
+        "pts": 2
+      },
+      {
+        "team": "Belgium",
+        "pld": 2,
+        "w": 0,
+        "d": 2,
+        "l": 0,
+        "gf": 1,
+        "ga": 1,
+        "gd": 0,
         "pts": 2
       },
       {
         "team": "New Zealand",
-        "pld": 3,
+        "pld": 2,
         "w": 0,
         "d": 1,
-        "l": 2,
+        "l": 1,
         "gf": 3,
-        "ga": 8,
-        "gd": -5,
+        "ga": 5,
+        "gd": -2,
         "pts": 1
       }
     ],
@@ -1174,46 +1174,46 @@ window.DASHBOARD_DATA = {
     "I": [
       {
         "team": "France",
-        "pld": 2,
-        "w": 2,
+        "pld": 3,
+        "w": 3,
         "d": 0,
         "l": 0,
-        "gf": 6,
-        "ga": 1,
-        "gd": 5,
-        "pts": 6
+        "gf": 9,
+        "ga": 2,
+        "gd": 7,
+        "pts": 9
       },
       {
         "team": "Norway",
-        "pld": 2,
+        "pld": 3,
         "w": 2,
         "d": 0,
-        "l": 0,
-        "gf": 7,
-        "ga": 3,
-        "gd": 4,
+        "l": 1,
+        "gf": 8,
+        "ga": 6,
+        "gd": 2,
         "pts": 6
       },
       {
         "team": "Senegal",
-        "pld": 2,
-        "w": 0,
+        "pld": 3,
+        "w": 1,
         "d": 0,
         "l": 2,
-        "gf": 3,
+        "gf": 8,
         "ga": 6,
-        "gd": -3,
-        "pts": 0
+        "gd": 2,
+        "pts": 3
       },
       {
         "team": "Iraq",
-        "pld": 2,
+        "pld": 3,
         "w": 0,
         "d": 0,
-        "l": 2,
+        "l": 3,
         "gf": 1,
-        "ga": 7,
-        "gd": -6,
+        "ga": 12,
+        "gd": -11,
         "pts": 0
       }
     ],
@@ -1628,6 +1628,32 @@ window.DASHBOARD_DATA = {
   },
   "upcoming": [
     {
+      "id": "G5",
+      "stage": "group",
+      "group": "G",
+      "datetime_utc": "2026-06-27T03:00:00Z",
+      "home": "Egypt",
+      "away": "Iran",
+      "status": "scheduled",
+      "home_score": null,
+      "away_score": null,
+      "decided_by": null,
+      "shootout_winner": null
+    },
+    {
+      "id": "G6",
+      "stage": "group",
+      "group": "G",
+      "datetime_utc": "2026-06-27T03:00:00Z",
+      "home": "New Zealand",
+      "away": "Belgium",
+      "status": "scheduled",
+      "home_score": null,
+      "away_score": null,
+      "decided_by": null,
+      "shootout_winner": null
+    },
+    {
       "id": "H5",
       "stage": "group",
       "group": "H",
@@ -1647,32 +1673,6 @@ window.DASHBOARD_DATA = {
       "datetime_utc": "2026-06-27T00:00:00Z",
       "home": "Uruguay",
       "away": "Spain",
-      "status": "scheduled",
-      "home_score": null,
-      "away_score": null,
-      "decided_by": null,
-      "shootout_winner": null
-    },
-    {
-      "id": "I5",
-      "stage": "group",
-      "group": "I",
-      "datetime_utc": "2026-06-26T19:00:00Z",
-      "home": "Norway",
-      "away": "France",
-      "status": "scheduled",
-      "home_score": null,
-      "away_score": null,
-      "decided_by": null,
-      "shootout_winner": null
-    },
-    {
-      "id": "I6",
-      "stage": "group",
-      "group": "I",
-      "datetime_utc": "2026-06-26T19:00:00Z",
-      "home": "Senegal",
-      "away": "Iraq",
       "status": "scheduled",
       "home_score": null,
       "away_score": null,
@@ -2228,5 +2228,5 @@ window.DASHBOARD_DATA = {
       ]
     }
   },
-  "lastUpdated": "2026-06-26 17:19"
+  "lastUpdated": "2026-06-26 17:26"
 };
