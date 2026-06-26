@@ -463,6 +463,12 @@ function renderUpcoming(data) {
         return;
     }
     
+    // Оставляем только матчи ближайшего игрового дня
+    const sorted = [...data.upcoming].sort((a, b) => new Date(a.datetime_utc) - new Date(b.datetime_utc));
+    const firstDate = new Date(sorted[0].datetime_utc).toDateString();
+    data.upcoming = sorted.filter(m => new Date(m.datetime_utc).toDateString() === firstDate);
+
+    
     data.upcoming.forEach(match => {
         const id = match.id;
         const aiData = (data.upcoming_ai && data.upcoming_ai[id]) || {};
