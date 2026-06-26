@@ -79,11 +79,23 @@ function updateUI(data) {
 
     // Обновление отрыва
     const gap = Math.abs(scoreOleg - scoreAlex);
-    const leader = scoreOleg > scoreAlex ? "Олег" : (scoreAlex > scoreOleg ? "Алекс" : "Ничья");
+    let leader = "Ничья";
+    if (scoreOleg > scoreAlex) leader = "Олег";
+    else if (scoreAlex > scoreOleg) leader = "Алекс";
     
     const gapElement = document.getElementById('gapText');
     if (gap === 0) {
         gapElement.textContent = "Счет равный";
+    } else {
+        gapElement.textContent = `${leader} +${gap}`;
+    }
+
+    // Корона
+    const crownOleg = document.getElementById('crownOleg');
+    const crownAlex = document.getElementById('crownAlex');
+    if (crownOleg && crownAlex) {
+        crownOleg.textContent = scoreOleg > scoreAlex ? '👑' : '';
+        crownAlex.textContent = scoreAlex > scoreOleg ? '👑' : '';
     } else {
         gapElement.textContent = `Отрыв: ${gap} очков (${leader} впереди)`;
     }

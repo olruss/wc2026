@@ -1,17 +1,17 @@
 window.DASHBOARD_DATA = {
   "currentScores": {
-    "Oleg": 136,
-    "Alex": 137
+    "Oleg": 143,
+    "Alex": 147
   },
   "stats": {
     "Oleg": {
       "exact": 2,
-      "outcomes": 29,
+      "outcomes": 31,
       "catches": 13
     },
     "Alex": {
-      "exact": 5,
-      "outcomes": 25,
+      "exact": 6,
+      "outcomes": 26,
       "catches": 12
     }
   },
@@ -305,6 +305,16 @@ window.DASHBOARD_DATA = {
     {
       "matchId": "D6",
       "Oleg": 1,
+      "Alex": 4
+    },
+    {
+      "matchId": "G5",
+      "Oleg": 4,
+      "Alex": 6
+    },
+    {
+      "matchId": "G6",
+      "Oleg": 3,
       "Alex": 4
     },
     {
@@ -772,6 +782,24 @@ window.DASHBOARD_DATA = {
       "Oleg_pts": 1,
       "Alex_pred": "1-1",
       "Alex_pts": 4
+    },
+    {
+      "id": "G5",
+      "match": "Egypt 2-1 Iran",
+      "stage": "group",
+      "Oleg_pred": "3-1",
+      "Oleg_pts": 4,
+      "Alex_pred": "2-1",
+      "Alex_pts": 6
+    },
+    {
+      "id": "G6",
+      "match": "New Zealand 0-3 Belgium",
+      "stage": "group",
+      "Oleg_pred": "1-2",
+      "Oleg_pts": 3,
+      "Alex_pred": "1-3",
+      "Alex_pts": 4
     }
   ],
   "groups": {
@@ -1054,46 +1082,46 @@ window.DASHBOARD_DATA = {
     "G": [
       {
         "team": "Egypt",
-        "pld": 2,
-        "w": 1,
+        "pld": 3,
+        "w": 2,
         "d": 1,
         "l": 0,
-        "gf": 4,
-        "ga": 2,
-        "gd": 2,
-        "pts": 4
-      },
-      {
-        "team": "Iran",
-        "pld": 2,
-        "w": 0,
-        "d": 2,
-        "l": 0,
-        "gf": 2,
-        "ga": 2,
-        "gd": 0,
-        "pts": 2
+        "gf": 6,
+        "ga": 3,
+        "gd": 3,
+        "pts": 7
       },
       {
         "team": "Belgium",
-        "pld": 2,
-        "w": 0,
+        "pld": 3,
+        "w": 1,
         "d": 2,
         "l": 0,
-        "gf": 1,
+        "gf": 4,
         "ga": 1,
-        "gd": 0,
+        "gd": 3,
+        "pts": 5
+      },
+      {
+        "team": "Iran",
+        "pld": 3,
+        "w": 0,
+        "d": 2,
+        "l": 1,
+        "gf": 3,
+        "ga": 4,
+        "gd": -1,
         "pts": 2
       },
       {
         "team": "New Zealand",
-        "pld": 2,
+        "pld": 3,
         "w": 0,
         "d": 1,
-        "l": 1,
+        "l": 2,
         "gf": 3,
-        "ga": 5,
-        "gd": -2,
+        "ga": 8,
+        "gd": -5,
         "pts": 1
       }
     ],
@@ -1599,32 +1627,6 @@ window.DASHBOARD_DATA = {
     ]
   },
   "upcoming": [
-    {
-      "id": "G5",
-      "stage": "group",
-      "group": "G",
-      "datetime_utc": "2026-06-27T03:00:00Z",
-      "home": "Egypt",
-      "away": "Iran",
-      "status": "scheduled",
-      "home_score": null,
-      "away_score": null,
-      "decided_by": null,
-      "shootout_winner": null
-    },
-    {
-      "id": "G6",
-      "stage": "group",
-      "group": "G",
-      "datetime_utc": "2026-06-27T03:00:00Z",
-      "home": "New Zealand",
-      "away": "Belgium",
-      "status": "scheduled",
-      "home_score": null,
-      "away_score": null,
-      "decided_by": null,
-      "shootout_winner": null
-    },
     {
       "id": "H5",
       "stage": "group",
@@ -2226,5 +2228,5 @@ window.DASHBOARD_DATA = {
       ]
     }
   },
-  "lastUpdated": "2026-06-26 17:14"
+  "lastUpdated": "2026-06-26 17:19"
 };
