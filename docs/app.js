@@ -520,7 +520,7 @@ function changeScore(matchId, teamIdx, delta) {
     document.getElementById(`score-${matchId}-${teamIdx}`).textContent = score;
 }
 
-function shareToTelegram() {
+function copyToClipboard(btn) {
     if (!window.DASHBOARD_DATA || !window.DASHBOARD_DATA.upcoming) return;
     
     let text = "Мои прогнозы на завтра:\n\n";
@@ -539,10 +539,14 @@ function shareToTelegram() {
         return;
     }
     
-    // Формируем URL для Telegram
-    const encodedText = encodeURIComponent(text);
-    const tgUrl = `https://t.me/share/url?url=&text=${encodedText}`;
-    
-    // Открываем Telegram
-    window.open(tgUrl, '_blank');
+    navigator.clipboard.writeText(text).then(() => {
+        const originalHTML = btn.innerHTML;
+        btn.innerHTML = '<svg viewBox="0 0 24 24" width="16" height="16" fill="currentColor"><path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"/></svg> Скопировано!';
+        setTimeout(() => {
+            btn.innerHTML = originalHTML;
+        }, 2000);
+    }).catch(err => {
+        console.error('Не удалось скопировать', err);
+        alert('Не удалось скопировать текст. Попробуйте вручную.');
+    });
 }
