@@ -442,7 +442,7 @@ function renderGroups(groups, matchDetails) {
 }
 
 function renderPlayoffs(playoffs) {
-    const container = document.getElementById('playoffsContainer');
+    const container = document.getElementById('playoffsGrid');
     if (!container) return;
     
     container.innerHTML = '';
