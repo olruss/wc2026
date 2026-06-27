@@ -199,27 +199,33 @@ def main():
     exact = {p: 0 for p in players}
     outcomes = {p: 0 for p in players}
     catches = {p: 0 for p in players}
-    rows = []  # per finished match
+    rows = []  # per match with predictions
 
-    for m in sorted(finished, key=lambda x: x.get("datetime_utc") or ""):
+    # Matches that either finished or have predictions
+    matches_to_score = [m for m in fixtures["matches"] if m["status"] == "finished" or any(predictions.get(p, {}).get(m["id"]) for p in players)]
+
+    for m in sorted(matches_to_score, key=lambda x: x.get("datetime_utc") or ""):
         if not any(predictions.get(p, {}).get(m["id"]) for p in players):
             continue  # nobody bet on this match — skip it
-        act = effective_result(m)
+        act = effective_result(m) if m["status"] == "finished" else ("-", "-")
         line = {"id": m["id"], "match": f'{m["home"]} {act[0]}-{act[1]} {m["away"]}',
-                "stage": m["stage"]}
+                "stage": m["stage"], "status": m["status"]}
         for p in players:
             pred = predictions.get(p, {}).get(m["id"])
             if pred is None:
                 line[p] = ("--", 0)
                 continue
-            pts, detail = score_prediction(pred, act, scoring)
-            totals[p] += pts
-            if pts == sum(scoring.values()):
-                exact[p] += 1
-            elif "O" in detail:
-                outcomes[p] += 1
-            elif pts > 0:
-                catches[p] += 1
+            if m["status"] == "finished":
+                pts, detail = score_prediction(pred, act, scoring)
+                totals[p] += pts
+                if pts == sum(scoring.values()):
+                    exact[p] += 1
+                elif "O" in detail:
+                    outcomes[p] += 1
+                elif pts > 0:
+                    catches[p] += 1
+            else:
+                pts = 0
             line[p] = (f'{pred[0]}-{pred[1]}', pts)
             line[f"{p}_pts"] = pts
         rows.append(line)
@@ -251,10 +257,12 @@ def main():
         print(" MATCH BREAKDOWN  (legend: O=outcome H=home A=away M=margin)")
         print("-" * W)
         for r in rows:
-            print(f' {r["id"]:<6} {r["match"]}')
+            status_tag = "" if r["status"] == "finished" else " (pending)"
+            print(f' {r["id"]:<6} {r["match"]}{status_tag}')
             for p in players:
                 pred, pts = r[p]
-                print(f'        {p:<10} {pred:>6}  -> {pts} pts')
+                pts_str = str(pts) if r["status"] == "finished" else "?"
+                print(f'        {p:<10} {pred:>6}  -> {pts_str} pts')
         print()
 
     print("-" * W)
@@ -279,15 +287,17 @@ def main():
     history = []
     matchDetails = []
     for r in rows:
-        history.append({
-            "matchId": r["id"],
-            "Oleg": r.get("Oleg_pts", 0),
-            "Alex": r.get("Alex_pts", 0)
-        })
+        if r["status"] == "finished":
+            history.append({
+                "matchId": r["id"],
+                "Oleg": r.get("Oleg_pts", 0),
+                "Alex": r.get("Alex_pts", 0)
+            })
         matchDetails.append({
             "id": r["id"],
             "match": r["match"],
             "stage": r["stage"],
+            "status": r["status"],
             "Oleg_pred": r.get("Oleg", ("--", 0))[0],
             "Oleg_pts": r.get("Oleg_pts", 0),
             "Alex_pred": r.get("Alex", ("--", 0))[0],

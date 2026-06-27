@@ -262,7 +262,8 @@ function renderMatches(data) {
     const matches = [...data.matchDetails].reverse().slice(0, 20);
 
     matches.forEach(m => {
-        const getPtsClass = (pts) => {
+        const getPtsClass = (pts, status) => {
+            if (status === 'scheduled') return 'pts-low'; // neutral color for pending
             if (pts >= 4) return 'pts-high';
             if (pts > 0) return 'pts-med';
             return 'pts-low';
@@ -270,6 +271,7 @@ function renderMatches(data) {
 
         const card = document.createElement('div');
         card.className = 'match-card';
+        const isScheduled = m.status === 'scheduled';
         card.innerHTML = `
             <div class="match-info">
                 <div class="match-id">${m.id} • ${m.stage.replace(/_/g, ' ')}</div>
@@ -279,13 +281,13 @@ function renderMatches(data) {
                 <div class="pred-block">
                     <div class="pred-player oleg">Олег</div>
                     <div class="pred-value">
-                        ${m.Oleg_pred} <span class="pred-pts ${getPtsClass(m.Oleg_pts)}">+${m.Oleg_pts}</span>
+                        ${m.Oleg_pred} <span class="pred-pts ${getPtsClass(m.Oleg_pts, m.status)}">${isScheduled ? '?' : '+' + m.Oleg_pts}</span>
                     </div>
                 </div>
                 <div class="pred-block">
                     <div class="pred-player alex">Алекс</div>
                     <div class="pred-value">
-                        ${m.Alex_pred} <span class="pred-pts ${getPtsClass(m.Alex_pts)}">+${m.Alex_pts}</span>
+                        ${m.Alex_pred} <span class="pred-pts ${getPtsClass(m.Alex_pts, m.status)}">${isScheduled ? '?' : '+' + m.Alex_pts}</span>
                     </div>
                 </div>
             </div>
