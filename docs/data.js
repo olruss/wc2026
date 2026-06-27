@@ -849,7 +849,7 @@ window.DASHBOARD_DATA = {
       "match": "Senegal 5-0 Iraq",
       "stage": "group",
       "status": "finished",
-      "Oleg_pred": "2-1",
+      "Oleg_pred": "3-1",
       "Oleg_pts": 3,
       "Alex_pred": "3-0",
       "Alex_pts": 4
@@ -861,7 +861,7 @@ window.DASHBOARD_DATA = {
       "status": "scheduled",
       "Oleg_pred": "2-1",
       "Oleg_pts": 0,
-      "Alex_pred": "2-1",
+      "Alex_pred": "1-1",
       "Alex_pts": 0
     },
     {
@@ -869,9 +869,9 @@ window.DASHBOARD_DATA = {
       "match": "Uruguay --- Spain",
       "stage": "group",
       "status": "scheduled",
-      "Oleg_pred": "1-2",
+      "Oleg_pred": "2-3",
       "Oleg_pts": 0,
-      "Alex_pred": "2-3",
+      "Alex_pred": "1-3",
       "Alex_pts": 0
     },
     {
@@ -879,9 +879,9 @@ window.DASHBOARD_DATA = {
       "match": "Egypt --- Iran",
       "stage": "group",
       "status": "scheduled",
-      "Oleg_pred": "3-1",
+      "Oleg_pred": "3-2",
       "Oleg_pts": 0,
-      "Alex_pred": "3-2",
+      "Alex_pred": "2-1",
       "Alex_pts": 0
     },
     {
@@ -889,9 +889,9 @@ window.DASHBOARD_DATA = {
       "match": "New Zealand --- Belgium",
       "stage": "group",
       "status": "scheduled",
-      "Oleg_pred": "1-2",
+      "Oleg_pred": "1-4",
       "Oleg_pts": 0,
-      "Alex_pred": "1-4",
+      "Alex_pred": "1-3",
       "Alex_pts": 0
     }
   ],
@@ -2321,5 +2321,5 @@ window.DASHBOARD_DATA = {
       ]
     }
   },
-  "lastUpdated": "2026-06-26 21:36"
+  "lastUpdated": "2026-06-26 21:38"
 };
