@@ -1,17 +1,17 @@
 window.DASHBOARD_DATA = {
   "currentScores": {
-    "Oleg": 147,
-    "Alex": 146
+    "Oleg": 151,
+    "Alex": 155
   },
   "stats": {
     "Oleg": {
       "exact": 2,
-      "outcomes": 31,
+      "outcomes": 32,
       "catches": 13
     },
     "Alex": {
       "exact": 5,
-      "outcomes": 27,
+      "outcomes": 29,
       "catches": 12
     }
   },
@@ -36,8 +36,8 @@ window.DASHBOARD_DATA = {
     "Alex": [
       {
         "team": "Spain",
-        "pts": 0,
-        "why": "group stage"
+        "pts": 2,
+        "why": "round_of_32"
       },
       {
         "team": "Argentina",
@@ -318,9 +318,19 @@ window.DASHBOARD_DATA = {
       "Alex": 4
     },
     {
+      "matchId": "H5",
+      "Oleg": 0,
+      "Alex": 4
+    },
+    {
+      "matchId": "H6",
+      "Oleg": 4,
+      "Alex": 3
+    },
+    {
       "matchId": "Favorites",
       "Oleg": 4,
-      "Alex": 2
+      "Alex": 4
     }
   ],
   "matchDetails": [
@@ -856,23 +866,23 @@ window.DASHBOARD_DATA = {
     },
     {
       "id": "H5",
-      "match": "Cape Verde --- Saudi Arabia",
+      "match": "Cape Verde 0-0 Saudi Arabia",
       "stage": "group",
-      "status": "scheduled",
+      "status": "finished",
       "Oleg_pred": "2-1",
       "Oleg_pts": 0,
       "Alex_pred": "1-1",
-      "Alex_pts": 0
+      "Alex_pts": 4
     },
     {
       "id": "H6",
-      "match": "Uruguay --- Spain",
+      "match": "Uruguay 0-1 Spain",
       "stage": "group",
-      "status": "scheduled",
+      "status": "finished",
       "Oleg_pred": "2-3",
-      "Oleg_pts": 0,
+      "Oleg_pts": 4,
       "Alex_pred": "1-3",
-      "Alex_pts": 0
+      "Alex_pts": 3
     },
     {
       "id": "G5",
@@ -1221,47 +1231,47 @@ window.DASHBOARD_DATA = {
     "H": [
       {
         "team": "Spain",
-        "pld": 2,
-        "w": 1,
+        "pld": 3,
+        "w": 2,
         "d": 1,
         "l": 0,
-        "gf": 4,
+        "gf": 5,
         "ga": 0,
-        "gd": 4,
-        "pts": 4
-      },
-      {
-        "team": "Uruguay",
-        "pld": 2,
-        "w": 0,
-        "d": 2,
-        "l": 0,
-        "gf": 3,
-        "ga": 3,
-        "gd": 0,
-        "pts": 2
+        "gd": 5,
+        "pts": 7
       },
       {
         "team": "Cape Verde",
-        "pld": 2,
+        "pld": 3,
         "w": 0,
-        "d": 2,
+        "d": 3,
         "l": 0,
         "gf": 2,
         "ga": 2,
         "gd": 0,
+        "pts": 3
+      },
+      {
+        "team": "Uruguay",
+        "pld": 3,
+        "w": 0,
+        "d": 2,
+        "l": 1,
+        "gf": 3,
+        "ga": 4,
+        "gd": -1,
         "pts": 2
       },
       {
         "team": "Saudi Arabia",
-        "pld": 2,
+        "pld": 3,
         "w": 0,
-        "d": 1,
+        "d": 2,
         "l": 1,
         "gf": 1,
         "ga": 5,
         "gd": -4,
-        "pts": 1
+        "pts": 2
       }
     ],
     "I": [
@@ -1494,14 +1504,14 @@ window.DASHBOARD_DATA = {
       {
         "id": "R32-6",
         "home": "Winner Grp G",
-        "away": "Runner-up Grp H",
+        "away": "Cape Verde",
         "home_score": "-",
         "away_score": "-",
         "status": "scheduled"
       },
       {
         "id": "R32-7",
-        "home": "Winner Grp H",
+        "home": "Spain",
         "away": "Norway",
         "home_score": "-",
         "away_score": "-",
@@ -1747,32 +1757,6 @@ window.DASHBOARD_DATA = {
       "shootout_winner": null
     },
     {
-      "id": "H5",
-      "stage": "group",
-      "group": "H",
-      "datetime_utc": "2026-06-27T00:00:00Z",
-      "home": "Cape Verde",
-      "away": "Saudi Arabia",
-      "status": "scheduled",
-      "home_score": null,
-      "away_score": null,
-      "decided_by": null,
-      "shootout_winner": null
-    },
-    {
-      "id": "H6",
-      "stage": "group",
-      "group": "H",
-      "datetime_utc": "2026-06-27T00:00:00Z",
-      "home": "Uruguay",
-      "away": "Spain",
-      "status": "scheduled",
-      "home_score": null,
-      "away_score": null,
-      "decided_by": null,
-      "shootout_winner": null
-    },
-    {
       "id": "J5",
       "stage": "group",
       "group": "J",
@@ -1915,7 +1899,7 @@ window.DASHBOARD_DATA = {
       "stage": "round_of_32",
       "datetime_utc": "2026-06-29T18:00:00Z",
       "home": "Winner Grp G",
-      "away": "Runner-up Grp H",
+      "away": "Cape Verde",
       "status": "scheduled",
       "home_score": null,
       "away_score": null,
@@ -1926,7 +1910,7 @@ window.DASHBOARD_DATA = {
       "id": "R32-7",
       "stage": "round_of_32",
       "datetime_utc": "2026-06-29T18:00:00Z",
-      "home": "Winner Grp H",
+      "home": "Spain",
       "away": "Norway",
       "status": "scheduled",
       "home_score": null,
@@ -2740,6 +2724,11 @@ window.DASHBOARD_DATA = {
         "result": "W",
         "score": "4:0",
         "opponent": "Saudi Arabia"
+      },
+      {
+        "result": "W",
+        "score": "1:0",
+        "opponent": "Uruguay"
       }
     ],
     "Cape Verde": [
@@ -2752,6 +2741,11 @@ window.DASHBOARD_DATA = {
         "result": "D",
         "score": "2:2",
         "opponent": "Uruguay"
+      },
+      {
+        "result": "D",
+        "score": "0:0",
+        "opponent": "Saudi Arabia"
       }
     ],
     "Belgium": [
@@ -2788,6 +2782,11 @@ window.DASHBOARD_DATA = {
         "result": "L",
         "score": "0:4",
         "opponent": "Spain"
+      },
+      {
+        "result": "D",
+        "score": "0:0",
+        "opponent": "Cape Verde"
       }
     ],
     "Uruguay": [
@@ -2800,6 +2799,11 @@ window.DASHBOARD_DATA = {
         "result": "D",
         "score": "2:2",
         "opponent": "Cape Verde"
+      },
+      {
+        "result": "L",
+        "score": "0:1",
+        "opponent": "Spain"
       }
     ],
     "Iran": [
@@ -3039,5 +3043,5 @@ window.DASHBOARD_DATA = {
       }
     ]
   },
-  "lastUpdated": "2026-06-26 22:42"
+  "lastUpdated": "2026-06-26 22:46"
 };
