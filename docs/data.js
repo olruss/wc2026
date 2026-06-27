@@ -1,7 +1,7 @@
 window.DASHBOARD_DATA = {
   "currentScores": {
-    "Oleg": 143,
-    "Alex": 144
+    "Oleg": 147,
+    "Alex": 146
   },
   "stats": {
     "Oleg": {
@@ -24,13 +24,13 @@ window.DASHBOARD_DATA = {
       },
       {
         "team": "France",
-        "pts": 0,
-        "why": "group stage"
+        "pts": 2,
+        "why": "round_of_32"
       },
       {
         "team": "Germany",
-        "pts": 0,
-        "why": "group stage"
+        "pts": 2,
+        "why": "round_of_32"
       }
     ],
     "Alex": [
@@ -46,8 +46,8 @@ window.DASHBOARD_DATA = {
       },
       {
         "team": "Netherlands",
-        "pts": 0,
-        "why": "group stage"
+        "pts": 2,
+        "why": "round_of_32"
       }
     ]
   },
@@ -319,8 +319,8 @@ window.DASHBOARD_DATA = {
     },
     {
       "matchId": "Favorites",
-      "Oleg": 0,
-      "Alex": 0
+      "Oleg": 4,
+      "Alex": 2
     }
   ],
   "matchDetails": [
@@ -1453,39 +1453,39 @@ window.DASHBOARD_DATA = {
     "round_of_32": [
       {
         "id": "R32-1",
-        "home": "Winner Grp B",
-        "away": "Runner-up Grp C",
+        "home": "Switzerland",
+        "away": "Morocco",
         "home_score": "-",
         "away_score": "-",
         "status": "scheduled"
       },
       {
         "id": "R32-2",
-        "home": "Winner Grp C",
-        "away": "Runner-up Grp D",
+        "home": "Brazil",
+        "away": "Australia",
         "home_score": "-",
         "away_score": "-",
         "status": "scheduled"
       },
       {
         "id": "R32-3",
-        "home": "Winner Grp D",
-        "away": "Runner-up Grp E",
+        "home": "United States",
+        "away": "Ivory Coast",
         "home_score": "-",
         "away_score": "-",
         "status": "scheduled"
       },
       {
         "id": "R32-4",
-        "home": "Winner Grp E",
-        "away": "Runner-up Grp F",
+        "home": "Germany",
+        "away": "Japan",
         "home_score": "-",
         "away_score": "-",
         "status": "scheduled"
       },
       {
         "id": "R32-5",
-        "home": "Winner Grp F",
+        "home": "Netherlands",
         "away": "Runner-up Grp G",
         "home_score": "-",
         "away_score": "-",
@@ -1502,14 +1502,14 @@ window.DASHBOARD_DATA = {
       {
         "id": "R32-7",
         "home": "Winner Grp H",
-        "away": "Runner-up Grp I",
+        "away": "Norway",
         "home_score": "-",
         "away_score": "-",
         "status": "scheduled"
       },
       {
         "id": "R32-8",
-        "home": "Winner Grp I",
+        "home": "France",
         "away": "Runner-up Grp J",
         "home_score": "-",
         "away_score": "-",
@@ -1534,47 +1534,47 @@ window.DASHBOARD_DATA = {
       {
         "id": "R32-11",
         "home": "Winner Grp L",
-        "away": "Runner-up Grp A",
+        "away": "South Africa",
         "home_score": "-",
         "away_score": "-",
         "status": "scheduled"
       },
       {
         "id": "R32-12",
-        "home": "Winner Grp A",
-        "away": "Runner-up Grp B",
+        "home": "Mexico",
+        "away": "Canada",
         "home_score": "-",
         "away_score": "-",
         "status": "scheduled"
       },
       {
         "id": "R32-13",
-        "home": "Winner Grp B",
-        "away": "Runner-up Grp C",
+        "home": "Switzerland",
+        "away": "Morocco",
         "home_score": "-",
         "away_score": "-",
         "status": "scheduled"
       },
       {
         "id": "R32-14",
-        "home": "Winner Grp C",
-        "away": "Runner-up Grp D",
+        "home": "Brazil",
+        "away": "Australia",
         "home_score": "-",
         "away_score": "-",
         "status": "scheduled"
       },
       {
         "id": "R32-15",
-        "home": "Winner Grp D",
-        "away": "Runner-up Grp E",
+        "home": "United States",
+        "away": "Ivory Coast",
         "home_score": "-",
         "away_score": "-",
         "status": "scheduled"
       },
       {
         "id": "R32-16",
-        "home": "Winner Grp E",
-        "away": "Runner-up Grp F",
+        "home": "Germany",
+        "away": "Japan",
         "home_score": "-",
         "away_score": "-",
         "status": "scheduled"
@@ -1854,8 +1854,8 @@ window.DASHBOARD_DATA = {
       "id": "R32-1",
       "stage": "round_of_32",
       "datetime_utc": "2026-06-28T18:00:00Z",
-      "home": "Winner Grp B",
-      "away": "Runner-up Grp C",
+      "home": "Switzerland",
+      "away": "Morocco",
       "status": "scheduled",
       "home_score": null,
       "away_score": null,
@@ -1866,8 +1866,8 @@ window.DASHBOARD_DATA = {
       "id": "R32-2",
       "stage": "round_of_32",
       "datetime_utc": "2026-06-28T18:00:00Z",
-      "home": "Winner Grp C",
-      "away": "Runner-up Grp D",
+      "home": "Brazil",
+      "away": "Australia",
       "status": "scheduled",
       "home_score": null,
       "away_score": null,
@@ -1878,8 +1878,8 @@ window.DASHBOARD_DATA = {
       "id": "R32-3",
       "stage": "round_of_32",
       "datetime_utc": "2026-06-28T18:00:00Z",
-      "home": "Winner Grp D",
-      "away": "Runner-up Grp E",
+      "home": "United States",
+      "away": "Ivory Coast",
       "status": "scheduled",
       "home_score": null,
       "away_score": null,
@@ -1890,8 +1890,8 @@ window.DASHBOARD_DATA = {
       "id": "R32-4",
       "stage": "round_of_32",
       "datetime_utc": "2026-06-29T18:00:00Z",
-      "home": "Winner Grp E",
-      "away": "Runner-up Grp F",
+      "home": "Germany",
+      "away": "Japan",
       "status": "scheduled",
       "home_score": null,
       "away_score": null,
@@ -1902,7 +1902,7 @@ window.DASHBOARD_DATA = {
       "id": "R32-5",
       "stage": "round_of_32",
       "datetime_utc": "2026-06-29T18:00:00Z",
-      "home": "Winner Grp F",
+      "home": "Netherlands",
       "away": "Runner-up Grp G",
       "status": "scheduled",
       "home_score": null,
@@ -1927,7 +1927,7 @@ window.DASHBOARD_DATA = {
       "stage": "round_of_32",
       "datetime_utc": "2026-06-29T18:00:00Z",
       "home": "Winner Grp H",
-      "away": "Runner-up Grp I",
+      "away": "Norway",
       "status": "scheduled",
       "home_score": null,
       "away_score": null,
@@ -1938,7 +1938,7 @@ window.DASHBOARD_DATA = {
       "id": "R32-8",
       "stage": "round_of_32",
       "datetime_utc": "2026-06-30T18:00:00Z",
-      "home": "Winner Grp I",
+      "home": "France",
       "away": "Runner-up Grp J",
       "status": "scheduled",
       "home_score": null,
@@ -1975,7 +1975,7 @@ window.DASHBOARD_DATA = {
       "stage": "round_of_32",
       "datetime_utc": "2026-06-30T18:00:00Z",
       "home": "Winner Grp L",
-      "away": "Runner-up Grp A",
+      "away": "South Africa",
       "status": "scheduled",
       "home_score": null,
       "away_score": null,
@@ -1986,8 +1986,8 @@ window.DASHBOARD_DATA = {
       "id": "R32-12",
       "stage": "round_of_32",
       "datetime_utc": "2026-06-31T18:00:00Z",
-      "home": "Winner Grp A",
-      "away": "Runner-up Grp B",
+      "home": "Mexico",
+      "away": "Canada",
       "status": "scheduled",
       "home_score": null,
       "away_score": null,
@@ -1998,8 +1998,8 @@ window.DASHBOARD_DATA = {
       "id": "R32-13",
       "stage": "round_of_32",
       "datetime_utc": "2026-06-31T18:00:00Z",
-      "home": "Winner Grp B",
-      "away": "Runner-up Grp C",
+      "home": "Switzerland",
+      "away": "Morocco",
       "status": "scheduled",
       "home_score": null,
       "away_score": null,
@@ -2010,8 +2010,8 @@ window.DASHBOARD_DATA = {
       "id": "R32-14",
       "stage": "round_of_32",
       "datetime_utc": "2026-06-31T18:00:00Z",
-      "home": "Winner Grp C",
-      "away": "Runner-up Grp D",
+      "home": "Brazil",
+      "away": "Australia",
       "status": "scheduled",
       "home_score": null,
       "away_score": null,
@@ -2022,8 +2022,8 @@ window.DASHBOARD_DATA = {
       "id": "R32-15",
       "stage": "round_of_32",
       "datetime_utc": "2026-06-31T18:00:00Z",
-      "home": "Winner Grp D",
-      "away": "Runner-up Grp E",
+      "home": "United States",
+      "away": "Ivory Coast",
       "status": "scheduled",
       "home_score": null,
       "away_score": null,
@@ -2034,8 +2034,8 @@ window.DASHBOARD_DATA = {
       "id": "R32-16",
       "stage": "round_of_32",
       "datetime_utc": "2026-06-32T18:00:00Z",
-      "home": "Winner Grp E",
-      "away": "Runner-up Grp F",
+      "home": "Germany",
+      "away": "Japan",
       "status": "scheduled",
       "home_score": null,
       "away_score": null,
@@ -2321,5 +2321,5 @@ window.DASHBOARD_DATA = {
       ]
     }
   },
-  "lastUpdated": "2026-06-26 21:38"
+  "lastUpdated": "2026-06-26 21:44"
 };
