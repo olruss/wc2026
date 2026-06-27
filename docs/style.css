@@ -773,10 +773,10 @@ table.group-table td.matrix-diagonal {
     border-radius: 50%;
     display: inline-block;
 }
-.dot-green { background-color: var(--color-exact); }
-.dot-yellow { background-color: var(--color-outcome); }
-.dot-red { background-color: var(--color-catch); }
-.dot-grey { background-color: var(--border-color); }
+.dot-green { background-color: #34a853; box-shadow: 0 0 4px rgba(52,168,83,0.4); }
+.dot-yellow { background-color: #fbbc04; box-shadow: 0 0 4px rgba(251,188,4,0.4); }
+.dot-red { background-color: #ea4335; box-shadow: 0 0 4px rgba(234,67,53,0.4); }
+.dot-grey { background-color: #9aa0a6; }
 
 /* Фавориты */
 .favorites-section {
