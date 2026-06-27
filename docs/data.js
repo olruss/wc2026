@@ -1,7 +1,7 @@
 window.DASHBOARD_DATA = {
   "currentScores": {
     "Oleg": 143,
-    "Alex": 145
+    "Alex": 144
   },
   "stats": {
     "Oleg": {
@@ -310,7 +310,7 @@ window.DASHBOARD_DATA = {
     {
       "matchId": "I5",
       "Oleg": 4,
-      "Alex": 4
+      "Alex": 3
     },
     {
       "matchId": "I6",
@@ -785,12 +785,12 @@ window.DASHBOARD_DATA = {
     },
     {
       "id": "I5",
-      "match": "Norway 1-3 France",
+      "match": "Norway 1-4 France",
       "stage": "group",
       "Oleg_pred": "1-2",
       "Oleg_pts": 4,
       "Alex_pred": "2-3",
-      "Alex_pts": 4
+      "Alex_pts": 3
     },
     {
       "id": "I6",
@@ -1178,9 +1178,9 @@ window.DASHBOARD_DATA = {
         "w": 3,
         "d": 0,
         "l": 0,
-        "gf": 9,
+        "gf": 10,
         "ga": 2,
-        "gd": 7,
+        "gd": 8,
         "pts": 9
       },
       {
@@ -1190,8 +1190,8 @@ window.DASHBOARD_DATA = {
         "d": 0,
         "l": 1,
         "gf": 8,
-        "ga": 6,
-        "gd": 2,
+        "ga": 7,
+        "gd": 1,
         "pts": 6
       },
       {
@@ -2228,5 +2228,5 @@ window.DASHBOARD_DATA = {
       ]
     }
   },
-  "lastUpdated": "2026-06-26 17:26"
+  "lastUpdated": "2026-06-26 20:50"
 };
