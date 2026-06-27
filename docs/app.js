@@ -48,9 +48,8 @@ function updateUI(data) {
                 last8.forEach(match => {
                     const pts = match[player];
                     let dotClass = 'dot-grey';
-                    if (pts === 6) dotClass = 'dot-green';
-                    else if (pts >= 3) dotClass = 'dot-yellow';
-                    else if (pts > 0) dotClass = 'dot-red';
+                    if (pts >= 3) dotClass = 'dot-green'; // Exact or Outcome
+                    else if (pts > 0) dotClass = 'dot-yellow'; // Catch
                     
                     const dot = document.createElement('span');
                     dot.className = `form-dot ${dotClass}`;
