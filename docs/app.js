@@ -529,10 +529,31 @@ function renderUpcoming(data) {
         return;
     }
     
-    // Оставляем только матчи ближайшего игрового дня
+    // Сортируем все предстоящие матчи
     const sorted = [...data.upcoming].sort((a, b) => new Date(a.datetime_utc) - new Date(b.datetime_utc));
-    const firstDate = new Date(sorted[0].datetime_utc).toDateString();
-    data.upcoming = sorted.filter(m => new Date(m.datetime_utc).toDateString() === firstDate);
+    
+    // Находим первый день, который наступает ПОСЛЕ сегодняшнего дня
+    const now = new Date();
+    const today = new Date(now.getFullYear(), now.getMonth(), now.getDate()); // Начало сегодня
+    
+    let targetDateStr = null;
+    for (const m of sorted) {
+        const mDate = new Date(m.datetime_utc);
+        const mDay = new Date(mDate.getFullYear(), mDate.getMonth(), mDate.getDate());
+        
+        // Берем первый день, который строго больше сегодня
+        if (mDay > today) {
+            targetDateStr = mDate.toDateString();
+            break;
+        }
+    }
+    
+    // Fallback: если все матчи только сегодня или турнир кончился
+    if (!targetDateStr && sorted.length > 0) {
+        targetDateStr = new Date(sorted[0].datetime_utc).toDateString();
+    }
+
+    data.upcoming = sorted.filter(m => new Date(m.datetime_utc).toDateString() === targetDateStr);
 
     
     data.upcoming.forEach(match => {
