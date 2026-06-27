@@ -318,6 +318,32 @@ def main():
     # Filter scheduled matches
     scheduled = [m for m in fixtures["matches"] if m["status"] == "scheduled"]
     
+    # Calculate team form
+    team_form = {}
+    for m in sorted(finished, key=lambda x: x.get("datetime_utc") or ""):
+        home, away = m["home"], m["away"]
+        if not home or not away or home.lower().startswith("winner") or home.lower().startswith("runner"):
+            continue
+        h_score, a_score = effective_result(m)
+        if h_score == "-" or a_score == "-":
+            continue
+            
+        if home not in team_form: team_form[home] = []
+        if away not in team_form: team_form[away] = []
+        
+        if h_score > a_score:
+            h_res, a_res = 'W', 'L'
+        elif h_score < a_score:
+            h_res, a_res = 'L', 'W'
+        else:
+            h_res, a_res = 'D', 'D'
+            
+        team_form[home].append({"result": h_res, "score": f"{h_score}:{a_score}", "opponent": away})
+        team_form[away].append({"result": a_res, "score": f"{a_score}:{h_score}", "opponent": home})
+        
+    for t in team_form:
+        team_form[t] = team_form[t][-5:]
+    
     data_json = {
         "currentScores": {
             p: totals[p] for p in players
@@ -334,6 +360,7 @@ def main():
         "playoffs": extract_playoffs(fixtures["matches"]),
         "upcoming": scheduled,
         "upcoming_ai": upcoming_ai,
+        "team_form": team_form,
         "lastUpdated": datetime.now().strftime("%Y-%m-%d %H:%M")
     }
     

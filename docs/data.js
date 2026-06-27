@@ -2321,5 +2321,723 @@ window.DASHBOARD_DATA = {
       ]
     }
   },
-  "lastUpdated": "2026-06-26 21:50"
+  "team_form": {
+    "Mexico": [
+      {
+        "result": "W",
+        "score": "2:0",
+        "opponent": "South Africa"
+      },
+      {
+        "result": "W",
+        "score": "1:0",
+        "opponent": "South Korea"
+      },
+      {
+        "result": "W",
+        "score": "3:0",
+        "opponent": "Czech Republic"
+      }
+    ],
+    "South Africa": [
+      {
+        "result": "L",
+        "score": "0:2",
+        "opponent": "Mexico"
+      },
+      {
+        "result": "D",
+        "score": "1:1",
+        "opponent": "Czech Republic"
+      },
+      {
+        "result": "W",
+        "score": "1:0",
+        "opponent": "South Korea"
+      }
+    ],
+    "South Korea": [
+      {
+        "result": "W",
+        "score": "2:1",
+        "opponent": "Czech Republic"
+      },
+      {
+        "result": "L",
+        "score": "0:1",
+        "opponent": "Mexico"
+      },
+      {
+        "result": "L",
+        "score": "0:1",
+        "opponent": "South Africa"
+      }
+    ],
+    "Czech Republic": [
+      {
+        "result": "L",
+        "score": "1:2",
+        "opponent": "South Korea"
+      },
+      {
+        "result": "D",
+        "score": "1:1",
+        "opponent": "South Africa"
+      },
+      {
+        "result": "L",
+        "score": "0:3",
+        "opponent": "Mexico"
+      }
+    ],
+    "Canada": [
+      {
+        "result": "D",
+        "score": "1:1",
+        "opponent": "Bosnia and Herzegovina"
+      },
+      {
+        "result": "W",
+        "score": "6:0",
+        "opponent": "Qatar"
+      },
+      {
+        "result": "L",
+        "score": "1:2",
+        "opponent": "Switzerland"
+      }
+    ],
+    "Bosnia and Herzegovina": [
+      {
+        "result": "D",
+        "score": "1:1",
+        "opponent": "Canada"
+      },
+      {
+        "result": "L",
+        "score": "1:4",
+        "opponent": "Switzerland"
+      },
+      {
+        "result": "W",
+        "score": "3:1",
+        "opponent": "Qatar"
+      }
+    ],
+    "United States": [
+      {
+        "result": "W",
+        "score": "4:1",
+        "opponent": "Paraguay"
+      },
+      {
+        "result": "W",
+        "score": "2:0",
+        "opponent": "Australia"
+      },
+      {
+        "result": "L",
+        "score": "2:3",
+        "opponent": "Turkey"
+      }
+    ],
+    "Paraguay": [
+      {
+        "result": "L",
+        "score": "1:4",
+        "opponent": "United States"
+      },
+      {
+        "result": "W",
+        "score": "1:0",
+        "opponent": "Turkey"
+      },
+      {
+        "result": "D",
+        "score": "0:0",
+        "opponent": "Australia"
+      }
+    ],
+    "Qatar": [
+      {
+        "result": "D",
+        "score": "1:1",
+        "opponent": "Switzerland"
+      },
+      {
+        "result": "L",
+        "score": "0:6",
+        "opponent": "Canada"
+      },
+      {
+        "result": "L",
+        "score": "1:3",
+        "opponent": "Bosnia and Herzegovina"
+      }
+    ],
+    "Switzerland": [
+      {
+        "result": "D",
+        "score": "1:1",
+        "opponent": "Qatar"
+      },
+      {
+        "result": "W",
+        "score": "4:1",
+        "opponent": "Bosnia and Herzegovina"
+      },
+      {
+        "result": "W",
+        "score": "2:1",
+        "opponent": "Canada"
+      }
+    ],
+    "Brazil": [
+      {
+        "result": "D",
+        "score": "1:1",
+        "opponent": "Morocco"
+      },
+      {
+        "result": "W",
+        "score": "3:0",
+        "opponent": "Haiti"
+      },
+      {
+        "result": "W",
+        "score": "3:0",
+        "opponent": "Scotland"
+      }
+    ],
+    "Morocco": [
+      {
+        "result": "D",
+        "score": "1:1",
+        "opponent": "Brazil"
+      },
+      {
+        "result": "W",
+        "score": "1:0",
+        "opponent": "Scotland"
+      },
+      {
+        "result": "W",
+        "score": "4:2",
+        "opponent": "Haiti"
+      }
+    ],
+    "Haiti": [
+      {
+        "result": "L",
+        "score": "0:1",
+        "opponent": "Scotland"
+      },
+      {
+        "result": "L",
+        "score": "0:3",
+        "opponent": "Brazil"
+      },
+      {
+        "result": "L",
+        "score": "2:4",
+        "opponent": "Morocco"
+      }
+    ],
+    "Scotland": [
+      {
+        "result": "W",
+        "score": "1:0",
+        "opponent": "Haiti"
+      },
+      {
+        "result": "L",
+        "score": "0:1",
+        "opponent": "Morocco"
+      },
+      {
+        "result": "L",
+        "score": "0:3",
+        "opponent": "Brazil"
+      }
+    ],
+    "Australia": [
+      {
+        "result": "W",
+        "score": "2:0",
+        "opponent": "Turkey"
+      },
+      {
+        "result": "L",
+        "score": "0:2",
+        "opponent": "United States"
+      },
+      {
+        "result": "D",
+        "score": "0:0",
+        "opponent": "Paraguay"
+      }
+    ],
+    "Turkey": [
+      {
+        "result": "L",
+        "score": "0:2",
+        "opponent": "Australia"
+      },
+      {
+        "result": "L",
+        "score": "0:1",
+        "opponent": "Paraguay"
+      },
+      {
+        "result": "W",
+        "score": "3:2",
+        "opponent": "United States"
+      }
+    ],
+    "Germany": [
+      {
+        "result": "W",
+        "score": "7:1",
+        "opponent": "Curaçao"
+      },
+      {
+        "result": "W",
+        "score": "2:1",
+        "opponent": "Ivory Coast"
+      },
+      {
+        "result": "L",
+        "score": "1:2",
+        "opponent": "Ecuador"
+      }
+    ],
+    "Curaçao": [
+      {
+        "result": "L",
+        "score": "1:7",
+        "opponent": "Germany"
+      },
+      {
+        "result": "D",
+        "score": "0:0",
+        "opponent": "Ecuador"
+      },
+      {
+        "result": "L",
+        "score": "0:2",
+        "opponent": "Ivory Coast"
+      }
+    ],
+    "Netherlands": [
+      {
+        "result": "D",
+        "score": "2:2",
+        "opponent": "Japan"
+      },
+      {
+        "result": "W",
+        "score": "5:1",
+        "opponent": "Sweden"
+      },
+      {
+        "result": "W",
+        "score": "3:1",
+        "opponent": "Tunisia"
+      }
+    ],
+    "Japan": [
+      {
+        "result": "D",
+        "score": "2:2",
+        "opponent": "Netherlands"
+      },
+      {
+        "result": "W",
+        "score": "4:0",
+        "opponent": "Tunisia"
+      },
+      {
+        "result": "D",
+        "score": "1:1",
+        "opponent": "Sweden"
+      }
+    ],
+    "Ivory Coast": [
+      {
+        "result": "W",
+        "score": "1:0",
+        "opponent": "Ecuador"
+      },
+      {
+        "result": "L",
+        "score": "1:2",
+        "opponent": "Germany"
+      },
+      {
+        "result": "W",
+        "score": "2:0",
+        "opponent": "Curaçao"
+      }
+    ],
+    "Ecuador": [
+      {
+        "result": "L",
+        "score": "0:1",
+        "opponent": "Ivory Coast"
+      },
+      {
+        "result": "D",
+        "score": "0:0",
+        "opponent": "Curaçao"
+      },
+      {
+        "result": "W",
+        "score": "2:1",
+        "opponent": "Germany"
+      }
+    ],
+    "Sweden": [
+      {
+        "result": "W",
+        "score": "5:1",
+        "opponent": "Tunisia"
+      },
+      {
+        "result": "L",
+        "score": "1:5",
+        "opponent": "Netherlands"
+      },
+      {
+        "result": "D",
+        "score": "1:1",
+        "opponent": "Japan"
+      }
+    ],
+    "Tunisia": [
+      {
+        "result": "L",
+        "score": "1:5",
+        "opponent": "Sweden"
+      },
+      {
+        "result": "L",
+        "score": "0:4",
+        "opponent": "Japan"
+      },
+      {
+        "result": "L",
+        "score": "1:3",
+        "opponent": "Netherlands"
+      }
+    ],
+    "Spain": [
+      {
+        "result": "D",
+        "score": "0:0",
+        "opponent": "Cape Verde"
+      },
+      {
+        "result": "W",
+        "score": "4:0",
+        "opponent": "Saudi Arabia"
+      }
+    ],
+    "Cape Verde": [
+      {
+        "result": "D",
+        "score": "0:0",
+        "opponent": "Spain"
+      },
+      {
+        "result": "D",
+        "score": "2:2",
+        "opponent": "Uruguay"
+      }
+    ],
+    "Belgium": [
+      {
+        "result": "D",
+        "score": "1:1",
+        "opponent": "Egypt"
+      },
+      {
+        "result": "D",
+        "score": "0:0",
+        "opponent": "Iran"
+      }
+    ],
+    "Egypt": [
+      {
+        "result": "D",
+        "score": "1:1",
+        "opponent": "Belgium"
+      },
+      {
+        "result": "W",
+        "score": "3:1",
+        "opponent": "New Zealand"
+      }
+    ],
+    "Saudi Arabia": [
+      {
+        "result": "D",
+        "score": "1:1",
+        "opponent": "Uruguay"
+      },
+      {
+        "result": "L",
+        "score": "0:4",
+        "opponent": "Spain"
+      }
+    ],
+    "Uruguay": [
+      {
+        "result": "D",
+        "score": "1:1",
+        "opponent": "Saudi Arabia"
+      },
+      {
+        "result": "D",
+        "score": "2:2",
+        "opponent": "Cape Verde"
+      }
+    ],
+    "Iran": [
+      {
+        "result": "D",
+        "score": "2:2",
+        "opponent": "New Zealand"
+      },
+      {
+        "result": "D",
+        "score": "0:0",
+        "opponent": "Belgium"
+      }
+    ],
+    "New Zealand": [
+      {
+        "result": "D",
+        "score": "2:2",
+        "opponent": "Iran"
+      },
+      {
+        "result": "L",
+        "score": "1:3",
+        "opponent": "Egypt"
+      }
+    ],
+    "France": [
+      {
+        "result": "W",
+        "score": "3:1",
+        "opponent": "Senegal"
+      },
+      {
+        "result": "W",
+        "score": "3:0",
+        "opponent": "Iraq"
+      },
+      {
+        "result": "W",
+        "score": "4:1",
+        "opponent": "Norway"
+      }
+    ],
+    "Senegal": [
+      {
+        "result": "L",
+        "score": "1:3",
+        "opponent": "France"
+      },
+      {
+        "result": "L",
+        "score": "2:3",
+        "opponent": "Norway"
+      },
+      {
+        "result": "W",
+        "score": "5:0",
+        "opponent": "Iraq"
+      }
+    ],
+    "Iraq": [
+      {
+        "result": "L",
+        "score": "1:4",
+        "opponent": "Norway"
+      },
+      {
+        "result": "L",
+        "score": "0:3",
+        "opponent": "France"
+      },
+      {
+        "result": "L",
+        "score": "0:5",
+        "opponent": "Senegal"
+      }
+    ],
+    "Norway": [
+      {
+        "result": "W",
+        "score": "4:1",
+        "opponent": "Iraq"
+      },
+      {
+        "result": "W",
+        "score": "3:2",
+        "opponent": "Senegal"
+      },
+      {
+        "result": "L",
+        "score": "1:4",
+        "opponent": "France"
+      }
+    ],
+    "Argentina": [
+      {
+        "result": "W",
+        "score": "3:0",
+        "opponent": "Algeria"
+      },
+      {
+        "result": "W",
+        "score": "2:0",
+        "opponent": "Austria"
+      }
+    ],
+    "Algeria": [
+      {
+        "result": "L",
+        "score": "0:3",
+        "opponent": "Argentina"
+      },
+      {
+        "result": "W",
+        "score": "2:1",
+        "opponent": "Jordan"
+      }
+    ],
+    "Austria": [
+      {
+        "result": "W",
+        "score": "3:1",
+        "opponent": "Jordan"
+      },
+      {
+        "result": "L",
+        "score": "0:2",
+        "opponent": "Argentina"
+      }
+    ],
+    "Jordan": [
+      {
+        "result": "L",
+        "score": "1:3",
+        "opponent": "Austria"
+      },
+      {
+        "result": "L",
+        "score": "1:2",
+        "opponent": "Algeria"
+      }
+    ],
+    "Portugal": [
+      {
+        "result": "D",
+        "score": "1:1",
+        "opponent": "DR Congo"
+      },
+      {
+        "result": "W",
+        "score": "5:0",
+        "opponent": "Uzbekistan"
+      }
+    ],
+    "DR Congo": [
+      {
+        "result": "D",
+        "score": "1:1",
+        "opponent": "Portugal"
+      },
+      {
+        "result": "L",
+        "score": "0:1",
+        "opponent": "Colombia"
+      }
+    ],
+    "England": [
+      {
+        "result": "W",
+        "score": "4:2",
+        "opponent": "Croatia"
+      },
+      {
+        "result": "D",
+        "score": "0:0",
+        "opponent": "Ghana"
+      }
+    ],
+    "Croatia": [
+      {
+        "result": "L",
+        "score": "2:4",
+        "opponent": "England"
+      },
+      {
+        "result": "W",
+        "score": "1:0",
+        "opponent": "Panama"
+      }
+    ],
+    "Ghana": [
+      {
+        "result": "W",
+        "score": "1:0",
+        "opponent": "Panama"
+      },
+      {
+        "result": "D",
+        "score": "0:0",
+        "opponent": "England"
+      }
+    ],
+    "Panama": [
+      {
+        "result": "L",
+        "score": "0:1",
+        "opponent": "Ghana"
+      },
+      {
+        "result": "L",
+        "score": "0:1",
+        "opponent": "Croatia"
+      }
+    ],
+    "Uzbekistan": [
+      {
+        "result": "L",
+        "score": "1:3",
+        "opponent": "Colombia"
+      },
+      {
+        "result": "L",
+        "score": "0:5",
+        "opponent": "Portugal"
+      }
+    ],
+    "Colombia": [
+      {
+        "result": "W",
+        "score": "3:1",
+        "opponent": "Uzbekistan"
+      },
+      {
+        "result": "W",
+        "score": "1:0",
+        "opponent": "DR Congo"
+      }
+    ]
+  },
+  "lastUpdated": "2026-06-26 21:54"
 };

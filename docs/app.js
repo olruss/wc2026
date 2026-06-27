@@ -519,6 +519,18 @@ function renderPlayoffs(playoffs) {
 // --- ПРОГНОЗЫ (UPCOMING) ---
 let userPredictions = {};
 
+function renderTeamForm(teamName, teamFormData) {
+    if (!teamFormData || !teamFormData[teamName]) return '';
+    return teamFormData[teamName].map(match => {
+        let dotClass = 'dot-grey';
+        if (match.result === 'W') dotClass = 'dot-green';
+        else if (match.result === 'D') dotClass = 'dot-yellow';
+        else if (match.result === 'L') dotClass = 'dot-red';
+        
+        return `<span class="form-dot ${dotClass}" title="${match.score} против ${match.opponent}" style="cursor: help;"></span>`;
+    }).join('');
+}
+
 function renderUpcoming(data) {
     const list = document.getElementById('upcomingList');
     if (!list) return;
@@ -581,8 +593,20 @@ function renderUpcoming(data) {
             <div class="upcoming-info">
                 <div class="match-id">${match.id} &middot; ${dateStr}</div>
             </div>
-            <div class="upcoming-teams">
-                ${match.home || 'TBD'} &mdash; ${match.away || 'TBD'}
+            <div class="upcoming-teams" style="display: flex; justify-content: space-around; align-items: center; margin: 15px 0;">
+                <div style="display: flex; flex-direction: column; align-items: center; gap: 5px;">
+                    <span style="font-weight: 700; font-size: 1.1em;">${match.home || 'TBD'}</span>
+                    <div style="display: flex; gap: 4px;">
+                        ${renderTeamForm(match.home, data.team_form)}
+                    </div>
+                </div>
+                <div style="font-weight: 300; color: var(--text-muted);">vs</div>
+                <div style="display: flex; flex-direction: column; align-items: center; gap: 5px;">
+                    <span style="font-weight: 700; font-size: 1.1em;">${match.away || 'TBD'}</span>
+                    <div style="display: flex; gap: 4px;">
+                        ${renderTeamForm(match.away, data.team_form)}
+                    </div>
+                </div>
             </div>
             <div class="upcoming-analytics">
                 🤖 <i>${aiData.analytics || 'Ожидаем интересный матч.'}</i>
