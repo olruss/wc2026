@@ -861,7 +861,7 @@ window.DASHBOARD_DATA = {
       "status": "scheduled",
       "Oleg_pred": "2-1",
       "Oleg_pts": 0,
-      "Alex_pred": "1-1",
+      "Alex_pred": "2-1",
       "Alex_pts": 0
     },
     {
@@ -871,7 +871,7 @@ window.DASHBOARD_DATA = {
       "status": "scheduled",
       "Oleg_pred": "1-2",
       "Oleg_pts": 0,
-      "Alex_pred": "1-3",
+      "Alex_pred": "2-3",
       "Alex_pts": 0
     },
     {
@@ -881,7 +881,7 @@ window.DASHBOARD_DATA = {
       "status": "scheduled",
       "Oleg_pred": "3-1",
       "Oleg_pts": 0,
-      "Alex_pred": "2-1",
+      "Alex_pred": "3-2",
       "Alex_pts": 0
     },
     {
@@ -891,7 +891,7 @@ window.DASHBOARD_DATA = {
       "status": "scheduled",
       "Oleg_pred": "1-2",
       "Oleg_pts": 0,
-      "Alex_pred": "1-3",
+      "Alex_pred": "1-4",
       "Alex_pts": 0
     }
   ],
@@ -2321,5 +2321,5 @@ window.DASHBOARD_DATA = {
       ]
     }
   },
-  "lastUpdated": "2026-06-26 21:34"
+  "lastUpdated": "2026-06-26 21:36"
 };
