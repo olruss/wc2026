@@ -1,18 +1,18 @@
 window.DASHBOARD_DATA = {
   "currentScores": {
-    "Oleg": 155,
-    "Alex": 160
+    "Oleg": 171,
+    "Alex": 165
   },
   "stats": {
     "Oleg": {
-      "exact": 2,
-      "outcomes": 33,
+      "exact": 4,
+      "outcomes": 34,
       "catches": 13
     },
     "Alex": {
       "exact": 5,
-      "outcomes": 30,
-      "catches": 13
+      "outcomes": 31,
+      "catches": 14
     }
   },
   "favorites_breakdown": {
@@ -336,6 +336,26 @@ window.DASHBOARD_DATA = {
       "matchId": "G6",
       "Oleg": 4,
       "Alex": 4
+    },
+    {
+      "matchId": "L5",
+      "Oleg": 6,
+      "Alex": 4
+    },
+    {
+      "matchId": "L6",
+      "Oleg": 6,
+      "Alex": 1
+    },
+    {
+      "matchId": "K5",
+      "Oleg": 0,
+      "Alex": 0
+    },
+    {
+      "matchId": "K6",
+      "Oleg": 4,
+      "Alex": 0
     },
     {
       "matchId": "Favorites",
@@ -913,6 +933,66 @@ window.DASHBOARD_DATA = {
       "Oleg_pts": 4,
       "Alex_pred": "1-3",
       "Alex_pts": 4
+    },
+    {
+      "id": "L5",
+      "match": "Panama 0-2 England",
+      "stage": "group",
+      "status": "finished",
+      "Oleg_pred": "0-2",
+      "Oleg_pts": 6,
+      "Alex_pred": "0-3",
+      "Alex_pts": 4
+    },
+    {
+      "id": "L6",
+      "match": "Croatia 2-1 Ghana",
+      "stage": "group",
+      "status": "finished",
+      "Oleg_pred": "2-1",
+      "Oleg_pts": 6,
+      "Alex_pred": "1-1",
+      "Alex_pts": 1
+    },
+    {
+      "id": "K5",
+      "match": "Colombia 0-0 Portugal",
+      "stage": "group",
+      "status": "finished",
+      "Oleg_pred": "1-2",
+      "Oleg_pts": 0,
+      "Alex_pred": "1-2",
+      "Alex_pts": 0
+    },
+    {
+      "id": "K6",
+      "match": "DR Congo 3-1 Uzbekistan",
+      "stage": "group",
+      "status": "finished",
+      "Oleg_pred": "2-0",
+      "Oleg_pts": 4,
+      "Alex_pred": "1-2",
+      "Alex_pts": 0
+    },
+    {
+      "id": "J5",
+      "match": "Algeria --- Austria",
+      "stage": "group",
+      "status": "scheduled",
+      "Oleg_pred": "1-2",
+      "Oleg_pts": 0,
+      "Alex_pred": "1-1",
+      "Alex_pts": 0
+    },
+    {
+      "id": "J6",
+      "match": "Jordan --- Argentina",
+      "stage": "group",
+      "status": "scheduled",
+      "Oleg_pred": "0-3",
+      "Oleg_pts": 0,
+      "Alex_pred": "0-3",
+      "Alex_pts": 0
     }
   ],
   "groups": {
@@ -3056,5 +3136,5 @@ window.DASHBOARD_DATA = {
       }
     ]
   },
-  "lastUpdated": "2026-06-27 22:04"
+  "lastUpdated": "2026-06-27 22:06"
 };
