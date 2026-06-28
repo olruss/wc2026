@@ -1,7 +1,7 @@
 window.DASHBOARD_DATA = {
   "currentScores": {
-    "Oleg": 171,
-    "Alex": 165
+    "Oleg": 173,
+    "Alex": 167
   },
   "stats": {
     "Oleg": {
@@ -19,8 +19,8 @@ window.DASHBOARD_DATA = {
     "Oleg": [
       {
         "team": "Argentina",
-        "pts": 0,
-        "why": "group stage"
+        "pts": 2,
+        "why": "round_of_32"
       },
       {
         "team": "France",
@@ -41,8 +41,8 @@ window.DASHBOARD_DATA = {
       },
       {
         "team": "Argentina",
-        "pts": 0,
-        "why": "group stage"
+        "pts": 2,
+        "why": "round_of_32"
       },
       {
         "team": "Netherlands",
@@ -359,8 +359,8 @@ window.DASHBOARD_DATA = {
     },
     {
       "matchId": "Favorites",
-      "Oleg": 4,
-      "Alex": 4
+      "Oleg": 6,
+      "Alex": 6
     }
   ],
   "matchDetails": [
@@ -1561,22 +1561,6 @@ window.DASHBOARD_DATA = {
       },
       {
         "id": "R32-2",
-        "home": "Germany",
-        "away": "DR Congo",
-        "home_score": "-",
-        "away_score": "-",
-        "status": "scheduled"
-      },
-      {
-        "id": "R32-3",
-        "home": "Netherlands",
-        "away": "Morocco",
-        "home_score": "-",
-        "away_score": "-",
-        "status": "scheduled"
-      },
-      {
-        "id": "R32-4",
         "home": "Brazil",
         "away": "Japan",
         "home_score": "-",
@@ -1584,17 +1568,33 @@ window.DASHBOARD_DATA = {
         "status": "scheduled"
       },
       {
+        "id": "R32-3",
+        "home": "Germany",
+        "away": "Paraguay",
+        "home_score": "-",
+        "away_score": "-",
+        "status": "scheduled"
+      },
+      {
+        "id": "R32-4",
+        "home": "Netherlands",
+        "away": "Morocco",
+        "home_score": "-",
+        "away_score": "-",
+        "status": "scheduled"
+      },
+      {
         "id": "R32-5",
-        "home": "France",
-        "away": "Sweden",
+        "home": "Ivory Coast",
+        "away": "Norway",
         "home_score": "-",
         "away_score": "-",
         "status": "scheduled"
       },
       {
         "id": "R32-6",
-        "home": "Ivory Coast",
-        "away": "Norway",
+        "home": "France",
+        "away": "Sweden",
         "home_score": "-",
         "away_score": "-",
         "status": "scheduled"
@@ -1610,13 +1610,21 @@ window.DASHBOARD_DATA = {
       {
         "id": "R32-8",
         "home": "England",
-        "away": "Ghana",
+        "away": "DR Congo",
         "home_score": "-",
         "away_score": "-",
         "status": "scheduled"
       },
       {
         "id": "R32-9",
+        "home": "Belgium",
+        "away": "Senegal",
+        "home_score": "-",
+        "away_score": "-",
+        "status": "scheduled"
+      },
+      {
+        "id": "R32-10",
         "home": "United States",
         "away": "Bosnia and Herzegovina",
         "home_score": "-",
@@ -1624,15 +1632,15 @@ window.DASHBOARD_DATA = {
         "status": "scheduled"
       },
       {
-        "id": "R32-10",
-        "home": "Belgium",
-        "away": "Paraguay",
+        "id": "R32-11",
+        "home": "Spain",
+        "away": "TBD",
         "home_score": "-",
         "away_score": "-",
         "status": "scheduled"
       },
       {
-        "id": "R32-11",
+        "id": "R32-12",
         "home": "Portugal",
         "away": "Croatia",
         "home_score": "-",
@@ -1640,41 +1648,33 @@ window.DASHBOARD_DATA = {
         "status": "scheduled"
       },
       {
-        "id": "R32-12",
-        "home": "Spain",
-        "away": "Runner-up Grp J",
-        "home_score": "-",
-        "away_score": "-",
-        "status": "scheduled"
-      },
-      {
         "id": "R32-13",
         "home": "Switzerland",
-        "away": "Senegal",
+        "away": "TBD",
         "home_score": "-",
         "away_score": "-",
         "status": "scheduled"
       },
       {
         "id": "R32-14",
-        "home": "Winner Grp J",
-        "away": "Cape Verde",
+        "home": "Australia",
+        "away": "Egypt",
         "home_score": "-",
         "away_score": "-",
         "status": "scheduled"
       },
       {
         "id": "R32-15",
-        "home": "Colombia",
-        "away": "Iran",
+        "home": "Argentina",
+        "away": "Cape Verde",
         "home_score": "-",
         "away_score": "-",
         "status": "scheduled"
       },
       {
         "id": "R32-16",
-        "home": "Australia",
-        "away": "Egypt",
+        "home": "Colombia",
+        "away": "Ghana",
         "home_score": "-",
         "away_score": "-",
         "status": "scheduled"
@@ -1849,7 +1849,7 @@ window.DASHBOARD_DATA = {
     {
       "id": "R32-1",
       "stage": "round_of_32",
-      "datetime_utc": "2026-06-28T14:00:00Z",
+      "datetime_utc": "2026-06-28T19:00:00Z",
       "home": "South Africa",
       "away": "Canada",
       "status": "scheduled",
@@ -1861,31 +1861,7 @@ window.DASHBOARD_DATA = {
     {
       "id": "R32-2",
       "stage": "round_of_32",
-      "datetime_utc": "2026-06-28T18:00:00Z",
-      "home": "Germany",
-      "away": "DR Congo",
-      "status": "scheduled",
-      "home_score": null,
-      "away_score": null,
-      "decided_by": null,
-      "shootout_winner": null
-    },
-    {
-      "id": "R32-3",
-      "stage": "round_of_32",
-      "datetime_utc": "2026-06-28T22:00:00Z",
-      "home": "Netherlands",
-      "away": "Morocco",
-      "status": "scheduled",
-      "home_score": null,
-      "away_score": null,
-      "decided_by": null,
-      "shootout_winner": null
-    },
-    {
-      "id": "R32-4",
-      "stage": "round_of_32",
-      "datetime_utc": "2026-06-29T14:00:00Z",
+      "datetime_utc": "2026-06-29T17:00:00Z",
       "home": "Brazil",
       "away": "Japan",
       "status": "scheduled",
@@ -1895,11 +1871,11 @@ window.DASHBOARD_DATA = {
       "shootout_winner": null
     },
     {
-      "id": "R32-5",
+      "id": "R32-3",
       "stage": "round_of_32",
-      "datetime_utc": "2026-06-29T18:00:00Z",
-      "home": "France",
-      "away": "Sweden",
+      "datetime_utc": "2026-06-29T20:30:00Z",
+      "home": "Germany",
+      "away": "Paraguay",
       "status": "scheduled",
       "home_score": null,
       "away_score": null,
@@ -1907,9 +1883,21 @@ window.DASHBOARD_DATA = {
       "shootout_winner": null
     },
     {
-      "id": "R32-6",
+      "id": "R32-4",
       "stage": "round_of_32",
-      "datetime_utc": "2026-06-29T22:00:00Z",
+      "datetime_utc": "2026-06-30T01:00:00Z",
+      "home": "Netherlands",
+      "away": "Morocco",
+      "status": "scheduled",
+      "home_score": null,
+      "away_score": null,
+      "decided_by": null,
+      "shootout_winner": null
+    },
+    {
+      "id": "R32-5",
+      "stage": "round_of_32",
+      "datetime_utc": "2026-06-30T17:00:00Z",
       "home": "Ivory Coast",
       "away": "Norway",
       "status": "scheduled",
@@ -1919,9 +1907,21 @@ window.DASHBOARD_DATA = {
       "shootout_winner": null
     },
     {
+      "id": "R32-6",
+      "stage": "round_of_32",
+      "datetime_utc": "2026-06-30T21:00:00Z",
+      "home": "France",
+      "away": "Sweden",
+      "status": "scheduled",
+      "home_score": null,
+      "away_score": null,
+      "decided_by": null,
+      "shootout_winner": null
+    },
+    {
       "id": "R32-7",
       "stage": "round_of_32",
-      "datetime_utc": "2026-06-30T14:00:00Z",
+      "datetime_utc": "2026-07-01T01:00:00Z",
       "home": "Mexico",
       "away": "Ecuador",
       "status": "scheduled",
@@ -1933,9 +1933,9 @@ window.DASHBOARD_DATA = {
     {
       "id": "R32-8",
       "stage": "round_of_32",
-      "datetime_utc": "2026-06-30T18:00:00Z",
+      "datetime_utc": "2026-07-01T16:00:00Z",
       "home": "England",
-      "away": "Ghana",
+      "away": "DR Congo",
       "status": "scheduled",
       "home_score": null,
       "away_score": null,
@@ -1945,9 +1945,9 @@ window.DASHBOARD_DATA = {
     {
       "id": "R32-9",
       "stage": "round_of_32",
-      "datetime_utc": "2026-06-30T22:00:00Z",
-      "home": "United States",
-      "away": "Bosnia and Herzegovina",
+      "datetime_utc": "2026-07-01T20:00:00Z",
+      "home": "Belgium",
+      "away": "Senegal",
       "status": "scheduled",
       "home_score": null,
       "away_score": null,
@@ -1957,9 +1957,9 @@ window.DASHBOARD_DATA = {
     {
       "id": "R32-10",
       "stage": "round_of_32",
-      "datetime_utc": "2026-07-01T14:00:00Z",
-      "home": "Belgium",
-      "away": "Paraguay",
+      "datetime_utc": "2026-07-02T00:00:00Z",
+      "home": "United States",
+      "away": "Bosnia and Herzegovina",
       "status": "scheduled",
       "home_score": null,
       "away_score": null,
@@ -1969,9 +1969,9 @@ window.DASHBOARD_DATA = {
     {
       "id": "R32-11",
       "stage": "round_of_32",
-      "datetime_utc": "2026-07-01T18:00:00Z",
-      "home": "Portugal",
-      "away": "Croatia",
+      "datetime_utc": "2026-07-02T19:00:00Z",
+      "home": "Spain",
+      "away": "TBD",
       "status": "scheduled",
       "home_score": null,
       "away_score": null,
@@ -1981,9 +1981,9 @@ window.DASHBOARD_DATA = {
     {
       "id": "R32-12",
       "stage": "round_of_32",
-      "datetime_utc": "2026-07-01T22:00:00Z",
-      "home": "Spain",
-      "away": "Runner-up Grp J",
+      "datetime_utc": "2026-07-02T23:00:00Z",
+      "home": "Portugal",
+      "away": "Croatia",
       "status": "scheduled",
       "home_score": null,
       "away_score": null,
@@ -1993,9 +1993,9 @@ window.DASHBOARD_DATA = {
     {
       "id": "R32-13",
       "stage": "round_of_32",
-      "datetime_utc": "2026-07-02T14:00:00Z",
+      "datetime_utc": "2026-07-03T03:00:00Z",
       "home": "Switzerland",
-      "away": "Senegal",
+      "away": "TBD",
       "status": "scheduled",
       "home_score": null,
       "away_score": null,
@@ -2005,9 +2005,9 @@ window.DASHBOARD_DATA = {
     {
       "id": "R32-14",
       "stage": "round_of_32",
-      "datetime_utc": "2026-07-02T18:00:00Z",
-      "home": "Winner Grp J",
-      "away": "Cape Verde",
+      "datetime_utc": "2026-07-03T18:00:00Z",
+      "home": "Australia",
+      "away": "Egypt",
       "status": "scheduled",
       "home_score": null,
       "away_score": null,
@@ -2017,9 +2017,9 @@ window.DASHBOARD_DATA = {
     {
       "id": "R32-15",
       "stage": "round_of_32",
-      "datetime_utc": "2026-07-02T22:00:00Z",
-      "home": "Colombia",
-      "away": "Iran",
+      "datetime_utc": "2026-07-03T22:00:00Z",
+      "home": "Argentina",
+      "away": "Cape Verde",
       "status": "scheduled",
       "home_score": null,
       "away_score": null,
@@ -2029,9 +2029,9 @@ window.DASHBOARD_DATA = {
     {
       "id": "R32-16",
       "stage": "round_of_32",
-      "datetime_utc": "2026-07-03T14:00:00Z",
-      "home": "Australia",
-      "away": "Egypt",
+      "datetime_utc": "2026-07-04T01:30:00Z",
+      "home": "Colombia",
+      "away": "Ghana",
       "status": "scheduled",
       "home_score": null,
       "away_score": null,
@@ -2232,109 +2232,11 @@ window.DASHBOARD_DATA = {
     }
   ],
   "upcoming_ai": {
-    "I5": {
-      "analytics": "Сборная Франции обладает невероятным потенциалом в атаке, однако Норвегия славится своей жесткой дисциплиной. Холанд и Эдегор способны создать проблемы любой обороне на контратаках. Тем не менее, глубина состава и опыт больших турниров должны позволить французам одержать верх в этом напряженном противостоянии.",
-      "predicted_score": [
-        1,
-        3
-      ]
-    },
-    "I6": {
-      "analytics": "Сенегал демонстрирует мощный, атлетичный футбол с быстрыми флангами. Ирак, напротив, будет стремиться засушить игру и действовать от глубокой обороны. Скорее всего, африканская сборная сможет взломать защиту соперника во втором тайме за счет лучшей физической готовности.",
-      "predicted_score": [
-        2,
-        0
-      ]
-    },
-    "G5": {
-      "analytics": "Иран традиционно выстраивает непроходимые редуты и отлично действует при стандартах. Египет полностью полагается на магию Мохаммеда Салаха и быстрые переходы из обороны в атаку. Ожидается вязкая игра с минимумом моментов, где все решит индивидуальное мастерство лидеров.",
-      "predicted_score": [
-        1,
-        0
-      ]
-    },
-    "G6": {
-      "analytics": "Бельгия переживает смену поколений, но их класс все еще на голову выше многих соперников. Новая Зеландия редко встречается с командами такого уровня и попытается просто избежать разгрома. Скорее всего, бельгийцы обеспечат комфортное преимущество уже в первом тайме.",
-      "predicted_score": [
-        0,
-        3
-      ]
-    },
-    "H5": {
-      "analytics": "Матч двух примерно равных по силе сборных. Саудовская Аравия лучше контролирует мяч в центре поля благодаря сыгранности состава, тогда как Кабо-Верде делает ставку на скорость и атлетизм своих крайних нападающих. Ничья кажется самым логичным исходом, но возможна минимальная победа азиатской команды.",
-      "predicted_score": [
-        1,
-        2
-      ]
-    },
-    "H6": {
-      "analytics": "Один из самых интригующих матчей группового этапа. Испания заберет мяч под свой тотальный контроль (ожидается около 70% владения), но Уругвай обладает смертоносным переходом в атаку и агрессивным прессингом. Эта тактическая битва двух разных стилей обещает стать настоящим украшением турнира.",
-      "predicted_score": [
-        1,
-        1
-      ]
-    },
-    "K5": {
-      "analytics": "Португалия привезла на турнир фантастическое поколение молодых звезд, готовых разорвать любую защиту. Колумбия отвечает высочайшей интенсивностью, жесткостью в единоборствах и опасными флангами. Нас ждет открытый футбол с обоюдными шансами, где решающим фактором станет реализация моментов.",
-      "predicted_score": [
-        1,
-        2
-      ]
-    },
-    "K6": {
-      "analytics": "Узбекистан показывает очень организованный футбол и может стать открытием турнира, если справится с волнением. ДР Конго играет нестабильно: они могут как выдать блестящий матч, так и провалиться в обороне. Азиатская сборная выглядит чуть более дисциплинированной, что должно помочь им набрать очки.",
-      "predicted_score": [
-        1,
-        1
-      ]
-    },
-    "L5": {
-      "analytics": "Англия традиционно является одним из главных фаворитов и не должна испытать никаких проблем. Панама попытается выстроить автобус у своих ворот, но разница в индивидуальном мастерстве слишком велика. Ожидается уверенная игра британцев и возможно появление резервистов во втором тайме.",
-      "predicted_score": [
-        0,
-        4
-      ]
-    },
-    "L6": {
-      "analytics": "Хорватия все еще полагается на свой опытнейший центр поля, который умеет контролировать темп игры в любой ситуации. Гана обладает потрясающей скоростью, но ей не хватает тактической зрелости. Скорее всего, европейцы свяжут игру в центре и одержат победу на классе.",
-      "predicted_score": [
-        2,
-        1
-      ]
-    },
-    "J5": {
-      "analytics": "Австрия под руководством Ральфа Рангника показывает невероятно энергозатратный и агрессивный прессинг. Алжиру, привыкшему к более размеренному темпу, будет критически не хватать времени на принятие решений. Высокое давление европейцев должно привести к ошибкам в защите африканской команды.",
-      "predicted_score": [
-        0,
-        2
-      ]
-    },
-    "J6": {
-      "analytics": "Действующие чемпионы мира начинают свой путь к защите титула против явного аутсайдера. Аргентина мотивирована показать красивый атакующий футбол с первых же минут. Иордании придется весь матч провести в глухой обороне, пытаясь избежать слишком крупного счета.",
-      "predicted_score": [
-        0,
-        3
-      ]
-    },
     "R32-1": {
       "analytics": "Первый матч плей-офф! Канада показывает невероятно быстрый и интенсивный футбол с акцентом на фланги, где сияет Альфонсо Дэвис. Южная Африка играет более дисциплинированно и компактно, уповая на стандарты и контратаки. Ожидается равная игра, но североамериканцы выглядят чуть свежее и острее в завершении.",
       "predicted_score": [
         0,
         2
-      ]
-    },
-    "R32-2": {
-      "analytics": "Сборная Германии — один из главных фаворитов турнира, демонстрирующий идеальный контроль мяча и жесточайший контрпрессинг. ДР Конго обладает выдающейся физической мощью, но им может не хватить тактической гибкости против машины Нагельсмана. Ожидается уверенная победа европейцев.",
-      "predicted_score": [
-        3,
-        0
-      ]
-    },
-    "R32-3": {
-      "analytics": "Нидерланды играют в зрелищный, атакующий футбол с акцентом на владение. Марокко, помня свой триумфальный прорыв на прошлом ЧМ, снова делает ставку на непроходимую оборону и сумасшедшую самоотдачу. Это классическое противостояние стилей, где все может решить один единственный гол.",
-      "predicted_score": [
-        1,
-        0
       ]
     }
   },
@@ -3136,5 +3038,5 @@ window.DASHBOARD_DATA = {
       }
     ]
   },
-  "lastUpdated": "2026-06-27 22:36"
+  "lastUpdated": "2026-06-27 22:42"
 };
