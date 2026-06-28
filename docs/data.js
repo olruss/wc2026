@@ -1553,31 +1553,31 @@ window.DASHBOARD_DATA = {
     "round_of_32": [
       {
         "id": "R32-1",
-        "home": "Switzerland",
-        "away": "Morocco",
+        "home": "South Africa",
+        "away": "Canada",
         "home_score": "-",
         "away_score": "-",
         "status": "scheduled"
       },
       {
         "id": "R32-2",
-        "home": "Brazil",
-        "away": "Australia",
+        "home": "Germany",
+        "away": "DR Congo",
         "home_score": "-",
         "away_score": "-",
         "status": "scheduled"
       },
       {
         "id": "R32-3",
-        "home": "United States",
-        "away": "Ivory Coast",
+        "home": "Netherlands",
+        "away": "Morocco",
         "home_score": "-",
         "away_score": "-",
         "status": "scheduled"
       },
       {
         "id": "R32-4",
-        "home": "Germany",
+        "home": "Brazil",
         "away": "Japan",
         "home_score": "-",
         "away_score": "-",
@@ -1585,64 +1585,64 @@ window.DASHBOARD_DATA = {
       },
       {
         "id": "R32-5",
-        "home": "Netherlands",
-        "away": "Egypt",
+        "home": "France",
+        "away": "Sweden",
         "home_score": "-",
         "away_score": "-",
         "status": "scheduled"
       },
       {
         "id": "R32-6",
-        "home": "Belgium",
-        "away": "Cape Verde",
-        "home_score": "-",
-        "away_score": "-",
-        "status": "scheduled"
-      },
-      {
-        "id": "R32-7",
-        "home": "Spain",
+        "home": "Ivory Coast",
         "away": "Norway",
         "home_score": "-",
         "away_score": "-",
         "status": "scheduled"
       },
       {
+        "id": "R32-7",
+        "home": "Mexico",
+        "away": "Ecuador",
+        "home_score": "-",
+        "away_score": "-",
+        "status": "scheduled"
+      },
+      {
         "id": "R32-8",
-        "home": "France",
-        "away": "Runner-up Grp J",
+        "home": "England",
+        "away": "Ghana",
         "home_score": "-",
         "away_score": "-",
         "status": "scheduled"
       },
       {
         "id": "R32-9",
-        "home": "Winner Grp J",
-        "away": "Portugal",
+        "home": "United States",
+        "away": "Bosnia and Herzegovina",
         "home_score": "-",
         "away_score": "-",
         "status": "scheduled"
       },
       {
         "id": "R32-10",
-        "home": "Colombia",
-        "away": "Croatia",
+        "home": "Belgium",
+        "away": "Paraguay",
         "home_score": "-",
         "away_score": "-",
         "status": "scheduled"
       },
       {
         "id": "R32-11",
-        "home": "England",
-        "away": "South Africa",
+        "home": "Portugal",
+        "away": "Croatia",
         "home_score": "-",
         "away_score": "-",
         "status": "scheduled"
       },
       {
         "id": "R32-12",
-        "home": "Mexico",
-        "away": "Canada",
+        "home": "Spain",
+        "away": "Runner-up Grp J",
         "home_score": "-",
         "away_score": "-",
         "status": "scheduled"
@@ -1650,31 +1650,31 @@ window.DASHBOARD_DATA = {
       {
         "id": "R32-13",
         "home": "Switzerland",
-        "away": "Morocco",
+        "away": "Senegal",
         "home_score": "-",
         "away_score": "-",
         "status": "scheduled"
       },
       {
         "id": "R32-14",
-        "home": "Brazil",
-        "away": "Australia",
+        "home": "Winner Grp J",
+        "away": "Cape Verde",
         "home_score": "-",
         "away_score": "-",
         "status": "scheduled"
       },
       {
         "id": "R32-15",
-        "home": "United States",
-        "away": "Ivory Coast",
+        "home": "Colombia",
+        "away": "Iran",
         "home_score": "-",
         "away_score": "-",
         "status": "scheduled"
       },
       {
         "id": "R32-16",
-        "home": "Germany",
-        "away": "Japan",
+        "home": "Australia",
+        "away": "Egypt",
         "home_score": "-",
         "away_score": "-",
         "status": "scheduled"
@@ -1849,9 +1849,9 @@ window.DASHBOARD_DATA = {
     {
       "id": "R32-1",
       "stage": "round_of_32",
-      "datetime_utc": "2026-06-28T18:00:00Z",
-      "home": "Switzerland",
-      "away": "Morocco",
+      "datetime_utc": "2026-06-28T14:00:00Z",
+      "home": "South Africa",
+      "away": "Canada",
       "status": "scheduled",
       "home_score": null,
       "away_score": null,
@@ -1862,8 +1862,8 @@ window.DASHBOARD_DATA = {
       "id": "R32-2",
       "stage": "round_of_32",
       "datetime_utc": "2026-06-28T18:00:00Z",
-      "home": "Brazil",
-      "away": "Australia",
+      "home": "Germany",
+      "away": "DR Congo",
       "status": "scheduled",
       "home_score": null,
       "away_score": null,
@@ -1873,9 +1873,9 @@ window.DASHBOARD_DATA = {
     {
       "id": "R32-3",
       "stage": "round_of_32",
-      "datetime_utc": "2026-06-28T18:00:00Z",
-      "home": "United States",
-      "away": "Ivory Coast",
+      "datetime_utc": "2026-06-28T22:00:00Z",
+      "home": "Netherlands",
+      "away": "Morocco",
       "status": "scheduled",
       "home_score": null,
       "away_score": null,
@@ -1885,8 +1885,8 @@ window.DASHBOARD_DATA = {
     {
       "id": "R32-4",
       "stage": "round_of_32",
-      "datetime_utc": "2026-06-29T18:00:00Z",
-      "home": "Germany",
+      "datetime_utc": "2026-06-29T14:00:00Z",
+      "home": "Brazil",
       "away": "Japan",
       "status": "scheduled",
       "home_score": null,
@@ -1898,8 +1898,8 @@ window.DASHBOARD_DATA = {
       "id": "R32-5",
       "stage": "round_of_32",
       "datetime_utc": "2026-06-29T18:00:00Z",
-      "home": "Netherlands",
-      "away": "Egypt",
+      "home": "France",
+      "away": "Sweden",
       "status": "scheduled",
       "home_score": null,
       "away_score": null,
@@ -1909,9 +1909,9 @@ window.DASHBOARD_DATA = {
     {
       "id": "R32-6",
       "stage": "round_of_32",
-      "datetime_utc": "2026-06-29T18:00:00Z",
-      "home": "Belgium",
-      "away": "Cape Verde",
+      "datetime_utc": "2026-06-29T22:00:00Z",
+      "home": "Ivory Coast",
+      "away": "Norway",
       "status": "scheduled",
       "home_score": null,
       "away_score": null,
@@ -1921,9 +1921,9 @@ window.DASHBOARD_DATA = {
     {
       "id": "R32-7",
       "stage": "round_of_32",
-      "datetime_utc": "2026-06-29T18:00:00Z",
-      "home": "Spain",
-      "away": "Norway",
+      "datetime_utc": "2026-06-30T14:00:00Z",
+      "home": "Mexico",
+      "away": "Ecuador",
       "status": "scheduled",
       "home_score": null,
       "away_score": null,
@@ -1934,8 +1934,8 @@ window.DASHBOARD_DATA = {
       "id": "R32-8",
       "stage": "round_of_32",
       "datetime_utc": "2026-06-30T18:00:00Z",
-      "home": "France",
-      "away": "Runner-up Grp J",
+      "home": "England",
+      "away": "Ghana",
       "status": "scheduled",
       "home_score": null,
       "away_score": null,
@@ -1945,9 +1945,9 @@ window.DASHBOARD_DATA = {
     {
       "id": "R32-9",
       "stage": "round_of_32",
-      "datetime_utc": "2026-06-30T18:00:00Z",
-      "home": "Winner Grp J",
-      "away": "Portugal",
+      "datetime_utc": "2026-06-30T22:00:00Z",
+      "home": "United States",
+      "away": "Bosnia and Herzegovina",
       "status": "scheduled",
       "home_score": null,
       "away_score": null,
@@ -1957,9 +1957,9 @@ window.DASHBOARD_DATA = {
     {
       "id": "R32-10",
       "stage": "round_of_32",
-      "datetime_utc": "2026-06-30T18:00:00Z",
-      "home": "Colombia",
-      "away": "Croatia",
+      "datetime_utc": "2026-07-01T14:00:00Z",
+      "home": "Belgium",
+      "away": "Paraguay",
       "status": "scheduled",
       "home_score": null,
       "away_score": null,
@@ -1969,9 +1969,9 @@ window.DASHBOARD_DATA = {
     {
       "id": "R32-11",
       "stage": "round_of_32",
-      "datetime_utc": "2026-06-30T18:00:00Z",
-      "home": "England",
-      "away": "South Africa",
+      "datetime_utc": "2026-07-01T18:00:00Z",
+      "home": "Portugal",
+      "away": "Croatia",
       "status": "scheduled",
       "home_score": null,
       "away_score": null,
@@ -1981,9 +1981,9 @@ window.DASHBOARD_DATA = {
     {
       "id": "R32-12",
       "stage": "round_of_32",
-      "datetime_utc": "2026-06-31T18:00:00Z",
-      "home": "Mexico",
-      "away": "Canada",
+      "datetime_utc": "2026-07-01T22:00:00Z",
+      "home": "Spain",
+      "away": "Runner-up Grp J",
       "status": "scheduled",
       "home_score": null,
       "away_score": null,
@@ -1993,9 +1993,9 @@ window.DASHBOARD_DATA = {
     {
       "id": "R32-13",
       "stage": "round_of_32",
-      "datetime_utc": "2026-06-31T18:00:00Z",
+      "datetime_utc": "2026-07-02T14:00:00Z",
       "home": "Switzerland",
-      "away": "Morocco",
+      "away": "Senegal",
       "status": "scheduled",
       "home_score": null,
       "away_score": null,
@@ -2005,9 +2005,9 @@ window.DASHBOARD_DATA = {
     {
       "id": "R32-14",
       "stage": "round_of_32",
-      "datetime_utc": "2026-06-31T18:00:00Z",
-      "home": "Brazil",
-      "away": "Australia",
+      "datetime_utc": "2026-07-02T18:00:00Z",
+      "home": "Winner Grp J",
+      "away": "Cape Verde",
       "status": "scheduled",
       "home_score": null,
       "away_score": null,
@@ -2017,9 +2017,9 @@ window.DASHBOARD_DATA = {
     {
       "id": "R32-15",
       "stage": "round_of_32",
-      "datetime_utc": "2026-06-31T18:00:00Z",
-      "home": "United States",
-      "away": "Ivory Coast",
+      "datetime_utc": "2026-07-02T22:00:00Z",
+      "home": "Colombia",
+      "away": "Iran",
       "status": "scheduled",
       "home_score": null,
       "away_score": null,
@@ -2029,9 +2029,9 @@ window.DASHBOARD_DATA = {
     {
       "id": "R32-16",
       "stage": "round_of_32",
-      "datetime_utc": "2026-06-32T18:00:00Z",
-      "home": "Germany",
-      "away": "Japan",
+      "datetime_utc": "2026-07-03T14:00:00Z",
+      "home": "Australia",
+      "away": "Egypt",
       "status": "scheduled",
       "home_score": null,
       "away_score": null,
@@ -2317,24 +2317,24 @@ window.DASHBOARD_DATA = {
       ]
     },
     "R32-1": {
-      "analytics": "Первый матч плей-офф! Швейцария славится железобетонной дисциплиной и умением выключать лидеров соперника. Марокко, бронзовый призер прошлого ЧМ, имеет потрясающую поддержку трибун и быстрые фланги. Игра будет осторожной, с минимумом рисков, и, скорее всего, завершится ничьей в основное время, но класс европейцев может сказаться в концовке.",
+      "analytics": "Первый матч плей-офф! Канада показывает невероятно быстрый и интенсивный футбол с акцентом на фланги, где сияет Альфонсо Дэвис. Южная Африка играет более дисциплинированно и компактно, уповая на стандарты и контратаки. Ожидается равная игра, но североамериканцы выглядят чуть свежее и острее в завершении.",
       "predicted_score": [
-        1,
-        1
+        0,
+        2
       ]
     },
     "R32-2": {
-      "analytics": "Бразилия — безоговорочный фаворит. Их атакующая линия способна разорвать любую оборону. Австралия сделает ставку на стандарты и физическую мощь, пытаясь навязать борьбу на каждом участке поля. Пентакампеоны должны без проблем оформить путевку в следующий раунд.",
+      "analytics": "Сборная Германии — один из главных фаворитов турнира, демонстрирующий идеальный контроль мяча и жесточайший контрпрессинг. ДР Конго обладает выдающейся физической мощью, но им может не хватить тактической гибкости против машины Нагельсмана. Ожидается уверенная победа европейцев.",
       "predicted_score": [
         3,
         0
       ]
     },
     "R32-3": {
-      "analytics": "Очень ровная и непредсказуемая пара. США играет дома при сумасшедшей поддержке и демонстрирует современный интенсивный футбол. Кот-д'Ивуар обладает мощным центром поля и великолепной физикой. Американцы за счет домашних трибун должны вырвать минимальную победу в очень тяжелом матче.",
+      "analytics": "Нидерланды играют в зрелищный, атакующий футбол с акцентом на владение. Марокко, помня свой триумфальный прорыв на прошлом ЧМ, снова делает ставку на непроходимую оборону и сумасшедшую самоотдачу. Это классическое противостояние стилей, где все может решить один единственный гол.",
       "predicted_score": [
-        2,
-        1
+        1,
+        0
       ]
     }
   },
@@ -3136,5 +3136,5 @@ window.DASHBOARD_DATA = {
       }
     ]
   },
-  "lastUpdated": "2026-06-27 22:06"
+  "lastUpdated": "2026-06-27 22:36"
 };
