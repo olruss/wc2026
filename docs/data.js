@@ -378,6 +378,11 @@ window.DASHBOARD_DATA = {
       "Alex": 4
     },
     {
+      "matchId": "R32-3",
+      "Oleg": 0,
+      "Alex": 0
+    },
+    {
       "matchId": "Favorites",
       "Oleg": 6,
       "Alex": 6
@@ -1036,9 +1041,9 @@ window.DASHBOARD_DATA = {
     },
     {
       "id": "R32-3",
-      "match": "Germany --- Paraguay",
+      "match": "Germany 1-2 Paraguay",
       "stage": "round_of_32",
-      "status": "scheduled",
+      "status": "finished",
       "Oleg_pred": "2-0",
       "Oleg_pts": 0,
       "Alex_pred": "2-1",
@@ -1631,9 +1636,9 @@ window.DASHBOARD_DATA = {
         "id": "R32-3",
         "home": "Germany",
         "away": "Paraguay",
-        "home_score": "-",
-        "away_score": "-",
-        "status": "scheduled"
+        "home_score": 1,
+        "away_score": 2,
+        "status": "finished"
       },
       {
         "id": "R32-4",
@@ -1880,18 +1885,6 @@ window.DASHBOARD_DATA = {
     ]
   },
   "upcoming": [
-    {
-      "id": "R32-3",
-      "stage": "round_of_32",
-      "datetime_utc": "2026-06-29T20:30:00Z",
-      "home": "Germany",
-      "away": "Paraguay",
-      "status": "scheduled",
-      "home_score": null,
-      "away_score": null,
-      "decided_by": null,
-      "shootout_winner": null
-    },
     {
       "id": "R32-4",
       "stage": "round_of_32",
@@ -2416,6 +2409,11 @@ window.DASHBOARD_DATA = {
         "result": "D",
         "score": "0:0",
         "opponent": "Australia"
+      },
+      {
+        "result": "W",
+        "score": "2:1",
+        "opponent": "Germany"
       }
     ],
     "Qatar": [
@@ -2574,6 +2572,11 @@ window.DASHBOARD_DATA = {
         "result": "L",
         "score": "1:2",
         "opponent": "Ecuador"
+      },
+      {
+        "result": "L",
+        "score": "1:2",
+        "opponent": "Paraguay"
       }
     ],
     "Curaçao": [
@@ -3109,5 +3112,5 @@ window.DASHBOARD_DATA = {
       }
     ]
   },
-  "lastUpdated": "2026-06-29 15:34"
+  "lastUpdated": "2026-06-29 19:47"
 };
