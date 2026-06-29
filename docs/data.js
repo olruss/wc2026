@@ -1,17 +1,17 @@
 window.DASHBOARD_DATA = {
   "currentScores": {
-    "Oleg": 177,
-    "Alex": 175
+    "Oleg": 181,
+    "Alex": 179
   },
   "stats": {
     "Oleg": {
       "exact": 4,
-      "outcomes": 35,
+      "outcomes": 36,
       "catches": 13
     },
     "Alex": {
       "exact": 5,
-      "outcomes": 33,
+      "outcomes": 34,
       "catches": 14
     }
   },
@@ -364,6 +364,11 @@ window.DASHBOARD_DATA = {
     },
     {
       "matchId": "J6",
+      "Oleg": 4,
+      "Alex": 4
+    },
+    {
+      "matchId": "R32-1",
       "Oleg": 4,
       "Alex": 4
     },
@@ -1002,6 +1007,16 @@ window.DASHBOARD_DATA = {
       "Oleg_pred": "0-3",
       "Oleg_pts": 4,
       "Alex_pred": "0-3",
+      "Alex_pts": 4
+    },
+    {
+      "id": "R32-1",
+      "match": "South Africa 0-1 Canada",
+      "stage": "round_of_32",
+      "status": "finished",
+      "Oleg_pred": "0-2",
+      "Oleg_pts": 4,
+      "Alex_pred": "1-2",
       "Alex_pts": 4
     }
   ],
@@ -3061,5 +3076,5 @@ window.DASHBOARD_DATA = {
       }
     ]
   },
-  "lastUpdated": "2026-06-28 21:33"
+  "lastUpdated": "2026-06-28 21:37"
 };
