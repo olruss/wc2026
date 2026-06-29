@@ -1,17 +1,17 @@
 window.DASHBOARD_DATA = {
   "currentScores": {
-    "Oleg": 181,
-    "Alex": 179
+    "Oleg": 185,
+    "Alex": 183
   },
   "stats": {
     "Oleg": {
       "exact": 4,
-      "outcomes": 36,
+      "outcomes": 37,
       "catches": 13
     },
     "Alex": {
       "exact": 5,
-      "outcomes": 34,
+      "outcomes": 35,
       "catches": 14
     }
   },
@@ -369,6 +369,11 @@ window.DASHBOARD_DATA = {
     },
     {
       "matchId": "R32-1",
+      "Oleg": 4,
+      "Alex": 4
+    },
+    {
+      "matchId": "R32-2",
       "Oleg": 4,
       "Alex": 4
     },
@@ -1018,6 +1023,36 @@ window.DASHBOARD_DATA = {
       "Oleg_pts": 4,
       "Alex_pred": "1-2",
       "Alex_pts": 4
+    },
+    {
+      "id": "R32-2",
+      "match": "Brazil 2-1 Japan",
+      "stage": "round_of_32",
+      "status": "finished",
+      "Oleg_pred": "2-0",
+      "Oleg_pts": 4,
+      "Alex_pred": "3-1",
+      "Alex_pts": 4
+    },
+    {
+      "id": "R32-3",
+      "match": "Germany --- Paraguay",
+      "stage": "round_of_32",
+      "status": "scheduled",
+      "Oleg_pred": "2-0",
+      "Oleg_pts": 0,
+      "Alex_pred": "2-1",
+      "Alex_pts": 0
+    },
+    {
+      "id": "R32-4",
+      "match": "Netherlands --- Morocco",
+      "stage": "round_of_32",
+      "status": "scheduled",
+      "Oleg_pred": "2-1",
+      "Oleg_pts": 0,
+      "Alex_pred": "2-0",
+      "Alex_pts": 0
     }
   ],
   "groups": {
@@ -1588,9 +1623,9 @@ window.DASHBOARD_DATA = {
         "id": "R32-2",
         "home": "Brazil",
         "away": "Japan",
-        "home_score": "-",
-        "away_score": "-",
-        "status": "scheduled"
+        "home_score": 2,
+        "away_score": 1,
+        "status": "finished"
       },
       {
         "id": "R32-3",
@@ -1845,18 +1880,6 @@ window.DASHBOARD_DATA = {
     ]
   },
   "upcoming": [
-    {
-      "id": "R32-2",
-      "stage": "round_of_32",
-      "datetime_utc": "2026-06-29T17:00:00Z",
-      "home": "Brazil",
-      "away": "Japan",
-      "status": "scheduled",
-      "home_score": null,
-      "away_score": null,
-      "decided_by": null,
-      "shootout_winner": null
-    },
     {
       "id": "R32-3",
       "stage": "round_of_32",
@@ -2444,6 +2467,11 @@ window.DASHBOARD_DATA = {
         "result": "W",
         "score": "3:0",
         "opponent": "Scotland"
+      },
+      {
+        "result": "W",
+        "score": "2:1",
+        "opponent": "Japan"
       }
     ],
     "Morocco": [
@@ -2597,6 +2625,11 @@ window.DASHBOARD_DATA = {
         "result": "D",
         "score": "1:1",
         "opponent": "Sweden"
+      },
+      {
+        "result": "L",
+        "score": "1:2",
+        "opponent": "Brazil"
       }
     ],
     "Ivory Coast": [
@@ -3076,5 +3109,5 @@ window.DASHBOARD_DATA = {
       }
     ]
   },
-  "lastUpdated": "2026-06-28 21:37"
+  "lastUpdated": "2026-06-29 15:34"
 };

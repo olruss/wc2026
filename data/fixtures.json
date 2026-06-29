@@ -967,9 +967,9 @@
       "datetime_utc": "2026-06-29T17:00:00Z",
       "home": "Brazil",
       "away": "Japan",
-      "status": "scheduled",
-      "home_score": null,
-      "away_score": null,
+      "status": "finished",
+      "home_score": 2,
+      "away_score": 1,
       "decided_by": null,
       "shootout_winner": null
     },
