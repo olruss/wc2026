@@ -1,17 +1,17 @@
 window.DASHBOARD_DATA = {
   "currentScores": {
-    "Oleg": 173,
-    "Alex": 167
+    "Oleg": 177,
+    "Alex": 175
   },
   "stats": {
     "Oleg": {
       "exact": 4,
-      "outcomes": 34,
+      "outcomes": 35,
       "catches": 13
     },
     "Alex": {
       "exact": 5,
-      "outcomes": 31,
+      "outcomes": 33,
       "catches": 14
     }
   },
@@ -356,6 +356,16 @@ window.DASHBOARD_DATA = {
       "matchId": "K6",
       "Oleg": 4,
       "Alex": 0
+    },
+    {
+      "matchId": "J5",
+      "Oleg": 0,
+      "Alex": 4
+    },
+    {
+      "matchId": "J6",
+      "Oleg": 4,
+      "Alex": 4
     },
     {
       "matchId": "Favorites",
@@ -976,23 +986,23 @@ window.DASHBOARD_DATA = {
     },
     {
       "id": "J5",
-      "match": "Algeria --- Austria",
+      "match": "Algeria 3-3 Austria",
       "stage": "group",
-      "status": "scheduled",
+      "status": "finished",
       "Oleg_pred": "1-2",
       "Oleg_pts": 0,
       "Alex_pred": "1-1",
-      "Alex_pts": 0
+      "Alex_pts": 4
     },
     {
       "id": "J6",
-      "match": "Jordan --- Argentina",
+      "match": "Jordan 1-3 Argentina",
       "stage": "group",
-      "status": "scheduled",
+      "status": "finished",
       "Oleg_pred": "0-3",
-      "Oleg_pts": 0,
+      "Oleg_pts": 4,
       "Alex_pred": "0-3",
-      "Alex_pts": 0
+      "Alex_pts": 4
     }
   ],
   "groups": {
@@ -1413,46 +1423,46 @@ window.DASHBOARD_DATA = {
     "J": [
       {
         "team": "Argentina",
-        "pld": 2,
-        "w": 2,
+        "pld": 3,
+        "w": 3,
         "d": 0,
         "l": 0,
-        "gf": 5,
-        "ga": 0,
-        "gd": 5,
-        "pts": 6
+        "gf": 8,
+        "ga": 1,
+        "gd": 7,
+        "pts": 9
       },
       {
         "team": "Austria",
-        "pld": 2,
+        "pld": 3,
         "w": 1,
-        "d": 0,
+        "d": 1,
         "l": 1,
-        "gf": 3,
-        "ga": 3,
+        "gf": 6,
+        "ga": 6,
         "gd": 0,
-        "pts": 3
+        "pts": 4
       },
       {
         "team": "Algeria",
-        "pld": 2,
+        "pld": 3,
         "w": 1,
-        "d": 0,
+        "d": 1,
         "l": 1,
-        "gf": 2,
-        "ga": 4,
+        "gf": 5,
+        "ga": 7,
         "gd": -2,
-        "pts": 3
+        "pts": 4
       },
       {
         "team": "Jordan",
-        "pld": 2,
+        "pld": 3,
         "w": 0,
         "d": 0,
-        "l": 2,
-        "gf": 2,
-        "ga": 5,
-        "gd": -3,
+        "l": 3,
+        "gf": 3,
+        "ga": 8,
+        "gd": -5,
         "pts": 0
       }
     ],
@@ -1555,9 +1565,9 @@ window.DASHBOARD_DATA = {
         "id": "R32-1",
         "home": "South Africa",
         "away": "Canada",
-        "home_score": "-",
-        "away_score": "-",
-        "status": "scheduled"
+        "home_score": 0,
+        "away_score": 1,
+        "status": "finished"
       },
       {
         "id": "R32-2",
@@ -1820,44 +1830,6 @@ window.DASHBOARD_DATA = {
     ]
   },
   "upcoming": [
-    {
-      "id": "J5",
-      "stage": "group",
-      "group": "J",
-      "datetime_utc": "2026-06-28T02:00:00Z",
-      "home": "Algeria",
-      "away": "Austria",
-      "status": "scheduled",
-      "home_score": null,
-      "away_score": null,
-      "decided_by": null,
-      "shootout_winner": null
-    },
-    {
-      "id": "J6",
-      "stage": "group",
-      "group": "J",
-      "datetime_utc": "2026-06-28T02:00:00Z",
-      "home": "Jordan",
-      "away": "Argentina",
-      "status": "scheduled",
-      "home_score": null,
-      "away_score": null,
-      "decided_by": null,
-      "shootout_winner": null
-    },
-    {
-      "id": "R32-1",
-      "stage": "round_of_32",
-      "datetime_utc": "2026-06-28T19:00:00Z",
-      "home": "South Africa",
-      "away": "Canada",
-      "status": "scheduled",
-      "home_score": null,
-      "away_score": null,
-      "decided_by": null,
-      "shootout_winner": null
-    },
     {
       "id": "R32-2",
       "stage": "round_of_32",
@@ -2238,6 +2210,27 @@ window.DASHBOARD_DATA = {
         0,
         2
       ]
+    },
+    "R32-2": {
+      "analytics": "Бразилия — фаворит с яркой и изобретательной атакой. Япония — дисциплинированная команда, играющая в высоком темпе. Бразильцам может быть сложно вскрыть организованную оборону самураев, но индивидуальный класс Винисиуса и Родриго должен стать решающим.",
+      "predicted_score": [
+        2,
+        0
+      ]
+    },
+    "R32-3": {
+      "analytics": "Германия демонстрирует мощный атакующий футбол, в то время как Парагвай известен своей неуступчивостью и жесткой игрой в отборе. Немцы с первых минут возьмут мяч под свой контроль, и вопрос лишь в том, как долго южноамериканцы смогут выдерживать давление.",
+      "predicted_score": [
+        3,
+        0
+      ]
+    },
+    "R32-4": {
+      "analytics": "Одно из самых интересных противостояний. Нидерланды любят доминировать и играть первым номером. Марокко, обладая опытом ЧМ-2022, умеет блестяще защищаться и остро контратаковать. Ожидается тяжелый и вязкий матч, где судьбу путевки может решить всего один гол.",
+      "predicted_score": [
+        1,
+        0
+      ]
     }
   },
   "team_form": {
@@ -2273,6 +2266,11 @@ window.DASHBOARD_DATA = {
         "result": "W",
         "score": "1:0",
         "opponent": "South Korea"
+      },
+      {
+        "result": "L",
+        "score": "0:1",
+        "opponent": "Canada"
       }
     ],
     "South Korea": [
@@ -2324,6 +2322,11 @@ window.DASHBOARD_DATA = {
         "result": "L",
         "score": "1:2",
         "opponent": "Switzerland"
+      },
+      {
+        "result": "W",
+        "score": "1:0",
+        "opponent": "South Africa"
       }
     ],
     "Bosnia and Herzegovina": [
@@ -2863,6 +2866,11 @@ window.DASHBOARD_DATA = {
         "result": "W",
         "score": "2:0",
         "opponent": "Austria"
+      },
+      {
+        "result": "W",
+        "score": "3:1",
+        "opponent": "Jordan"
       }
     ],
     "Algeria": [
@@ -2875,6 +2883,11 @@ window.DASHBOARD_DATA = {
         "result": "W",
         "score": "2:1",
         "opponent": "Jordan"
+      },
+      {
+        "result": "D",
+        "score": "3:3",
+        "opponent": "Austria"
       }
     ],
     "Austria": [
@@ -2887,6 +2900,11 @@ window.DASHBOARD_DATA = {
         "result": "L",
         "score": "0:2",
         "opponent": "Argentina"
+      },
+      {
+        "result": "D",
+        "score": "3:3",
+        "opponent": "Algeria"
       }
     ],
     "Jordan": [
@@ -2899,6 +2917,11 @@ window.DASHBOARD_DATA = {
         "result": "L",
         "score": "1:2",
         "opponent": "Algeria"
+      },
+      {
+        "result": "L",
+        "score": "1:3",
+        "opponent": "Argentina"
       }
     ],
     "Portugal": [
@@ -3038,5 +3061,5 @@ window.DASHBOARD_DATA = {
       }
     ]
   },
-  "lastUpdated": "2026-06-27 22:42"
+  "lastUpdated": "2026-06-28 21:33"
 };
