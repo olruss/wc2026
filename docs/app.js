@@ -40,7 +40,7 @@ function updateUI(data) {
     
     // Отрисовка полосы удачи (последние 8 матчей)
     if (data.history && data.history.length > 0) {
-        const last8 = data.history.slice(-8);
+        const last8 = data.history.slice(-8).reverse();
         ['Oleg', 'Alex'].forEach(player => {
             const formContainer = document.getElementById(`form-${player}`);
             if (formContainer) {
