@@ -304,12 +304,7 @@ def main():
             "Alex_pts": r.get("Alex_pts", 0)
         })
         
-    # Add favorite points as a final history item
-    history.append({
-        "matchId": "Favorites",
-        "Oleg": sum(pts for _, pts, _ in fav_breakdown.get("Oleg", [])),
-        "Alex": sum(pts for _, pts, _ in fav_breakdown.get("Alex", []))
-    })
+    # Favorite points are exported separately in fav_breakdown
     
     group_standings = calculate_groups(fixtures["matches"])
     playoff_bracket = extract_playoffs(fixtures["matches"])

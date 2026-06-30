@@ -386,11 +386,6 @@ window.DASHBOARD_DATA = {
       "matchId": "R32-4",
       "Oleg": 0,
       "Alex": 0
-    },
-    {
-      "matchId": "Favorites",
-      "Oleg": 6,
-      "Alex": 6
     }
   ],
   "matchDetails": [
@@ -3136,5 +3131,5 @@ window.DASHBOARD_DATA = {
       }
     ]
   },
-  "lastUpdated": "2026-06-29 23:57"
+  "lastUpdated": "2026-06-30 00:02"
 };
