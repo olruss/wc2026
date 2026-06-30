@@ -991,11 +991,11 @@
       "datetime_utc": "2026-06-30T01:00:00Z",
       "home": "Netherlands",
       "away": "Morocco",
-      "status": "scheduled",
-      "home_score": null,
-      "away_score": null,
-      "decided_by": null,
-      "shootout_winner": null
+      "status": "finished",
+      "home_score": 1,
+      "away_score": 1,
+      "decided_by": "penalties",
+      "shootout_winner": "Morocco"
     },
     {
       "id": "R32-5",

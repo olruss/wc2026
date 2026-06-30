@@ -383,6 +383,11 @@ window.DASHBOARD_DATA = {
       "Alex": 0
     },
     {
+      "matchId": "R32-4",
+      "Oleg": 0,
+      "Alex": 0
+    },
+    {
       "matchId": "Favorites",
       "Oleg": 6,
       "Alex": 6
@@ -1051,9 +1056,9 @@ window.DASHBOARD_DATA = {
     },
     {
       "id": "R32-4",
-      "match": "Netherlands --- Morocco",
+      "match": "Netherlands 1-2 Morocco",
       "stage": "round_of_32",
-      "status": "scheduled",
+      "status": "finished",
       "Oleg_pred": "2-1",
       "Oleg_pts": 0,
       "Alex_pred": "2-0",
@@ -1644,9 +1649,9 @@ window.DASHBOARD_DATA = {
         "id": "R32-4",
         "home": "Netherlands",
         "away": "Morocco",
-        "home_score": "-",
-        "away_score": "-",
-        "status": "scheduled"
+        "home_score": 1,
+        "away_score": 2,
+        "status": "finished"
       },
       {
         "id": "R32-5",
@@ -1885,18 +1890,6 @@ window.DASHBOARD_DATA = {
     ]
   },
   "upcoming": [
-    {
-      "id": "R32-4",
-      "stage": "round_of_32",
-      "datetime_utc": "2026-06-30T01:00:00Z",
-      "home": "Netherlands",
-      "away": "Morocco",
-      "status": "scheduled",
-      "home_score": null,
-      "away_score": null,
-      "decided_by": null,
-      "shootout_winner": null
-    },
     {
       "id": "R32-5",
       "stage": "round_of_32",
@@ -2262,6 +2255,27 @@ window.DASHBOARD_DATA = {
         1,
         0
       ]
+    },
+    "R32-5": {
+      "analytics": "Кот-д'Ивуар (Ivory Coast) показывает отличную физическую форму и быстрые фланги. Норвегия полагается на гений Эрлинга Холанда и Мартина Эдегора. Ожидается напряженный матч, где исход решит один момент. Защита африканской сборной может не справиться с мощью норвежского форварда.",
+      "predicted_score": [
+        1,
+        2
+      ]
+    },
+    "R32-6": {
+      "analytics": "Франция — очевидный фаворит с Мбаппе во главе. Швеция играет от строгой обороны, но им вряд ли удастся полностью сдержать невероятный атакующий потенциал французов на протяжении всех 90 минут.",
+      "predicted_score": [
+        3,
+        0
+      ]
+    },
+    "R32-7": {
+      "analytics": "Латиноамериканское дерби. Мексика всегда страстно играет на ЧМ, но Эквадор выглядит тактически более зрелой и физически крепкой командой в этом цикле. Ожидается жесткая борьба в центре поля и победа эквадорцев с минимальным перевесом.",
+      "predicted_score": [
+        0,
+        1
+      ]
     }
   },
   "team_form": {
@@ -2487,6 +2501,11 @@ window.DASHBOARD_DATA = {
         "result": "W",
         "score": "4:2",
         "opponent": "Haiti"
+      },
+      {
+        "result": "W",
+        "score": "2:1",
+        "opponent": "Netherlands"
       }
     ],
     "Haiti": [
@@ -2611,6 +2630,11 @@ window.DASHBOARD_DATA = {
         "result": "W",
         "score": "3:1",
         "opponent": "Tunisia"
+      },
+      {
+        "result": "L",
+        "score": "1:2",
+        "opponent": "Morocco"
       }
     ],
     "Japan": [
@@ -3112,5 +3136,5 @@ window.DASHBOARD_DATA = {
       }
     ]
   },
-  "lastUpdated": "2026-06-29 19:51"
+  "lastUpdated": "2026-06-29 23:57"
 };
