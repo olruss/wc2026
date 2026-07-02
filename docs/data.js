@@ -1,17 +1,17 @@
 window.DASHBOARD_DATA = {
   "currentScores": {
-    "Oleg": 185,
-    "Alex": 183
+    "Oleg": 215,
+    "Alex": 211
   },
   "stats": {
     "Oleg": {
-      "exact": 4,
-      "outcomes": 37,
+      "exact": 7,
+      "outcomes": 40,
       "catches": 13
     },
     "Alex": {
-      "exact": 5,
-      "outcomes": 35,
+      "exact": 7,
+      "outcomes": 39,
       "catches": 14
     }
   },
@@ -386,6 +386,36 @@ window.DASHBOARD_DATA = {
       "matchId": "R32-4",
       "Oleg": 0,
       "Alex": 0
+    },
+    {
+      "matchId": "R32-5",
+      "Oleg": 6,
+      "Alex": 4
+    },
+    {
+      "matchId": "R32-6",
+      "Oleg": 4,
+      "Alex": 6
+    },
+    {
+      "matchId": "R32-7",
+      "Oleg": 4,
+      "Alex": 6
+    },
+    {
+      "matchId": "R32-8",
+      "Oleg": 4,
+      "Alex": 4
+    },
+    {
+      "matchId": "R32-9",
+      "Oleg": 6,
+      "Alex": 4
+    },
+    {
+      "matchId": "R32-10",
+      "Oleg": 6,
+      "Alex": 4
     }
   ],
   "matchDetails": [
@@ -1061,63 +1091,63 @@ window.DASHBOARD_DATA = {
     },
     {
       "id": "R32-5",
-      "match": "Ivory Coast --- Norway",
+      "match": "Ivory Coast 1-2 Norway",
       "stage": "round_of_32",
-      "status": "scheduled",
+      "status": "finished",
       "Oleg_pred": "1-2",
-      "Oleg_pts": 0,
+      "Oleg_pts": 6,
       "Alex_pred": "1-3",
-      "Alex_pts": 0
+      "Alex_pts": 4
     },
     {
       "id": "R32-6",
-      "match": "France --- Sweden",
+      "match": "France 3-0 Sweden",
       "stage": "round_of_32",
-      "status": "scheduled",
+      "status": "finished",
       "Oleg_pred": "2-0",
-      "Oleg_pts": 0,
+      "Oleg_pts": 4,
       "Alex_pred": "3-0",
-      "Alex_pts": 0
+      "Alex_pts": 6
     },
     {
       "id": "R32-7",
-      "match": "Mexico --- Ecuador",
+      "match": "Mexico 2-0 Ecuador",
       "stage": "round_of_32",
-      "status": "scheduled",
+      "status": "finished",
       "Oleg_pred": "2-1",
-      "Oleg_pts": 0,
+      "Oleg_pts": 4,
       "Alex_pred": "2-0",
-      "Alex_pts": 0
+      "Alex_pts": 6
     },
     {
       "id": "R32-8",
-      "match": "England --- DR Congo",
+      "match": "England 2-1 DR Congo",
       "stage": "round_of_32",
-      "status": "scheduled",
+      "status": "finished",
       "Oleg_pred": "3-1",
-      "Oleg_pts": 0,
+      "Oleg_pts": 4,
       "Alex_pred": "2-0",
-      "Alex_pts": 0
+      "Alex_pts": 4
     },
     {
       "id": "R32-9",
-      "match": "Belgium --- Senegal",
+      "match": "Belgium 3-2 Senegal",
       "stage": "round_of_32",
-      "status": "scheduled",
+      "status": "finished",
       "Oleg_pred": "3-2",
-      "Oleg_pts": 0,
+      "Oleg_pts": 6,
       "Alex_pred": "2-1",
-      "Alex_pts": 0
+      "Alex_pts": 4
     },
     {
       "id": "R32-10",
-      "match": "United States --- Bosnia and Herzegovina",
+      "match": "United States 2-0 Bosnia and Herzegovina",
       "stage": "round_of_32",
-      "status": "scheduled",
+      "status": "finished",
       "Oleg_pred": "2-0",
-      "Oleg_pts": 0,
+      "Oleg_pts": 6,
       "Alex_pred": "3-1",
-      "Alex_pts": 0
+      "Alex_pts": 4
     }
   ],
   "groups": {
@@ -1712,49 +1742,49 @@ window.DASHBOARD_DATA = {
         "id": "R32-5",
         "home": "Ivory Coast",
         "away": "Norway",
-        "home_score": "-",
-        "away_score": "-",
-        "status": "scheduled"
+        "home_score": 1,
+        "away_score": 2,
+        "status": "finished"
       },
       {
         "id": "R32-6",
         "home": "France",
         "away": "Sweden",
-        "home_score": "-",
-        "away_score": "-",
-        "status": "scheduled"
+        "home_score": 3,
+        "away_score": 0,
+        "status": "finished"
       },
       {
         "id": "R32-7",
         "home": "Mexico",
         "away": "Ecuador",
-        "home_score": "-",
-        "away_score": "-",
-        "status": "scheduled"
+        "home_score": 2,
+        "away_score": 0,
+        "status": "finished"
       },
       {
         "id": "R32-8",
         "home": "England",
         "away": "DR Congo",
-        "home_score": "-",
-        "away_score": "-",
-        "status": "scheduled"
+        "home_score": 2,
+        "away_score": 1,
+        "status": "finished"
       },
       {
         "id": "R32-9",
         "home": "Belgium",
         "away": "Senegal",
-        "home_score": "-",
-        "away_score": "-",
-        "status": "scheduled"
+        "home_score": 3,
+        "away_score": 2,
+        "status": "finished"
       },
       {
         "id": "R32-10",
         "home": "United States",
         "away": "Bosnia and Herzegovina",
-        "home_score": "-",
-        "away_score": "-",
-        "status": "scheduled"
+        "home_score": 2,
+        "away_score": 0,
+        "status": "finished"
       },
       {
         "id": "R32-11",
@@ -1945,78 +1975,6 @@ window.DASHBOARD_DATA = {
     ]
   },
   "upcoming": [
-    {
-      "id": "R32-5",
-      "stage": "round_of_32",
-      "datetime_utc": "2026-06-30T17:00:00Z",
-      "home": "Ivory Coast",
-      "away": "Norway",
-      "status": "scheduled",
-      "home_score": null,
-      "away_score": null,
-      "decided_by": null,
-      "shootout_winner": null
-    },
-    {
-      "id": "R32-6",
-      "stage": "round_of_32",
-      "datetime_utc": "2026-06-30T21:00:00Z",
-      "home": "France",
-      "away": "Sweden",
-      "status": "scheduled",
-      "home_score": null,
-      "away_score": null,
-      "decided_by": null,
-      "shootout_winner": null
-    },
-    {
-      "id": "R32-7",
-      "stage": "round_of_32",
-      "datetime_utc": "2026-07-01T01:00:00Z",
-      "home": "Mexico",
-      "away": "Ecuador",
-      "status": "scheduled",
-      "home_score": null,
-      "away_score": null,
-      "decided_by": null,
-      "shootout_winner": null
-    },
-    {
-      "id": "R32-8",
-      "stage": "round_of_32",
-      "datetime_utc": "2026-07-01T16:00:00Z",
-      "home": "England",
-      "away": "DR Congo",
-      "status": "scheduled",
-      "home_score": null,
-      "away_score": null,
-      "decided_by": null,
-      "shootout_winner": null
-    },
-    {
-      "id": "R32-9",
-      "stage": "round_of_32",
-      "datetime_utc": "2026-07-01T20:00:00Z",
-      "home": "Belgium",
-      "away": "Senegal",
-      "status": "scheduled",
-      "home_score": null,
-      "away_score": null,
-      "decided_by": null,
-      "shootout_winner": null
-    },
-    {
-      "id": "R32-10",
-      "stage": "round_of_32",
-      "datetime_utc": "2026-07-02T00:00:00Z",
-      "home": "United States",
-      "away": "Bosnia and Herzegovina",
-      "status": "scheduled",
-      "home_score": null,
-      "away_score": null,
-      "decided_by": null,
-      "shootout_winner": null
-    },
     {
       "id": "R32-11",
       "stage": "round_of_32",
@@ -2331,6 +2289,27 @@ window.DASHBOARD_DATA = {
         0,
         1
       ]
+    },
+    "R32-11": {
+      "analytics": "Испания — один из главных фаворитов турнира, играет в классический контроль мяча. Австрия показала дерзкий футбол на групповом этапе, но им будет сложно забрать мяч у испанцев. Ожидается уверенная победа Испании на классе.",
+      "predicted_score": [
+        2,
+        0
+      ]
+    },
+    "R32-12": {
+      "analytics": "Один из самых равных матчей 1/16 финала. Опытная Португалия против неуступчивой Хорватии. Скорее всего, игра будет вязкой, с минимумом моментов. Исход может решить один стандарт или гениальный пас. Прогнозируется ничья в основное время.",
+      "predicted_score": [
+        1,
+        1
+      ]
+    },
+    "R32-13": {
+      "analytics": "Швейцария славится своей железобетонной обороной и дисциплиной. Алжир — техничная, но иногда нестабильная команда. Швейцарцы, вероятно, перетерпят соперника и найдут свой шанс на контратаке.",
+      "predicted_score": [
+        1,
+        0
+      ]
     }
   },
   "team_form": {
@@ -2349,6 +2328,11 @@ window.DASHBOARD_DATA = {
         "result": "W",
         "score": "3:0",
         "opponent": "Czech Republic"
+      },
+      {
+        "result": "W",
+        "score": "2:0",
+        "opponent": "Ecuador"
       }
     ],
     "South Africa": [
@@ -2444,6 +2428,11 @@ window.DASHBOARD_DATA = {
         "result": "W",
         "score": "3:1",
         "opponent": "Qatar"
+      },
+      {
+        "result": "L",
+        "score": "0:2",
+        "opponent": "United States"
       }
     ],
     "United States": [
@@ -2461,6 +2450,11 @@ window.DASHBOARD_DATA = {
         "result": "L",
         "score": "2:3",
         "opponent": "Turkey"
+      },
+      {
+        "result": "W",
+        "score": "2:0",
+        "opponent": "Bosnia and Herzegovina"
       }
     ],
     "Paraguay": [
@@ -2729,6 +2723,11 @@ window.DASHBOARD_DATA = {
         "result": "W",
         "score": "2:0",
         "opponent": "Curaçao"
+      },
+      {
+        "result": "L",
+        "score": "1:2",
+        "opponent": "Norway"
       }
     ],
     "Ecuador": [
@@ -2746,6 +2745,11 @@ window.DASHBOARD_DATA = {
         "result": "W",
         "score": "2:1",
         "opponent": "Germany"
+      },
+      {
+        "result": "L",
+        "score": "0:2",
+        "opponent": "Mexico"
       }
     ],
     "Sweden": [
@@ -2763,6 +2767,11 @@ window.DASHBOARD_DATA = {
         "result": "D",
         "score": "1:1",
         "opponent": "Japan"
+      },
+      {
+        "result": "L",
+        "score": "0:3",
+        "opponent": "France"
       }
     ],
     "Tunisia": [
@@ -2831,6 +2840,11 @@ window.DASHBOARD_DATA = {
         "result": "W",
         "score": "5:1",
         "opponent": "New Zealand"
+      },
+      {
+        "result": "W",
+        "score": "3:2",
+        "opponent": "Senegal"
       }
     ],
     "Egypt": [
@@ -2933,6 +2947,11 @@ window.DASHBOARD_DATA = {
         "result": "W",
         "score": "4:1",
         "opponent": "Norway"
+      },
+      {
+        "result": "W",
+        "score": "3:0",
+        "opponent": "Sweden"
       }
     ],
     "Senegal": [
@@ -2950,6 +2969,11 @@ window.DASHBOARD_DATA = {
         "result": "W",
         "score": "5:0",
         "opponent": "Iraq"
+      },
+      {
+        "result": "L",
+        "score": "2:3",
+        "opponent": "Belgium"
       }
     ],
     "Iraq": [
@@ -2984,6 +3008,11 @@ window.DASHBOARD_DATA = {
         "result": "L",
         "score": "1:4",
         "opponent": "France"
+      },
+      {
+        "result": "W",
+        "score": "2:1",
+        "opponent": "Ivory Coast"
       }
     ],
     "Argentina": [
@@ -3086,6 +3115,11 @@ window.DASHBOARD_DATA = {
         "result": "W",
         "score": "3:1",
         "opponent": "Uzbekistan"
+      },
+      {
+        "result": "L",
+        "score": "1:2",
+        "opponent": "England"
       }
     ],
     "England": [
@@ -3103,6 +3137,11 @@ window.DASHBOARD_DATA = {
         "result": "W",
         "score": "2:0",
         "opponent": "Panama"
+      },
+      {
+        "result": "W",
+        "score": "2:1",
+        "opponent": "DR Congo"
       }
     ],
     "Croatia": [
@@ -3191,5 +3230,5 @@ window.DASHBOARD_DATA = {
       }
     ]
   },
-  "lastUpdated": "2026-07-01 22:16"
+  "lastUpdated": "2026-07-01 22:18"
 };
