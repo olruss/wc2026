@@ -1058,6 +1058,66 @@ window.DASHBOARD_DATA = {
       "Oleg_pts": 0,
       "Alex_pred": "2-0",
       "Alex_pts": 0
+    },
+    {
+      "id": "R32-5",
+      "match": "Ivory Coast --- Norway",
+      "stage": "round_of_32",
+      "status": "scheduled",
+      "Oleg_pred": "1-2",
+      "Oleg_pts": 0,
+      "Alex_pred": "1-3",
+      "Alex_pts": 0
+    },
+    {
+      "id": "R32-6",
+      "match": "France --- Sweden",
+      "stage": "round_of_32",
+      "status": "scheduled",
+      "Oleg_pred": "2-0",
+      "Oleg_pts": 0,
+      "Alex_pred": "3-0",
+      "Alex_pts": 0
+    },
+    {
+      "id": "R32-7",
+      "match": "Mexico --- Ecuador",
+      "stage": "round_of_32",
+      "status": "scheduled",
+      "Oleg_pred": "2-1",
+      "Oleg_pts": 0,
+      "Alex_pred": "2-0",
+      "Alex_pts": 0
+    },
+    {
+      "id": "R32-8",
+      "match": "England --- DR Congo",
+      "stage": "round_of_32",
+      "status": "scheduled",
+      "Oleg_pred": "3-1",
+      "Oleg_pts": 0,
+      "Alex_pred": "2-0",
+      "Alex_pts": 0
+    },
+    {
+      "id": "R32-9",
+      "match": "Belgium --- Senegal",
+      "stage": "round_of_32",
+      "status": "scheduled",
+      "Oleg_pred": "3-2",
+      "Oleg_pts": 0,
+      "Alex_pred": "2-1",
+      "Alex_pts": 0
+    },
+    {
+      "id": "R32-10",
+      "match": "United States --- Bosnia and Herzegovina",
+      "stage": "round_of_32",
+      "status": "scheduled",
+      "Oleg_pred": "2-0",
+      "Oleg_pts": 0,
+      "Alex_pred": "3-1",
+      "Alex_pts": 0
     }
   ],
   "groups": {
@@ -3131,5 +3191,5 @@ window.DASHBOARD_DATA = {
       }
     ]
   },
-  "lastUpdated": "2026-06-30 00:02"
+  "lastUpdated": "2026-07-01 22:16"
 };
